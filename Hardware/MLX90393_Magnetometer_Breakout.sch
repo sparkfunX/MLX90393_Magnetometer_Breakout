@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1889,26 +1889,26 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <packages>
 </packages>
 <symbols>
-<symbol name="VDD">
-<description>&lt;h3&gt;VDD Voltage Supply&lt;/h3&gt;</description>
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<pin name="VDD" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-<text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
-</symbol>
 <symbol name="DGND">
 <description>&lt;h3&gt;Digital Ground Supply&lt;/h3&gt;</description>
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 <text x="0" y="-0.254" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
 </symbol>
+<symbol name="3.3V">
+<description>&lt;h3&gt;3.3V Voltage Supply&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<pin name="3.3V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="VDD" prefix="SUPPLY">
-<description>&lt;h3&gt;VDD Voltage Supply&lt;/h3&gt;
-&lt;p&gt;Positive voltage supply (traditionally for a CMOS device, D=drain).&lt;/p&gt;</description>
+<deviceset name="GND" prefix="GND">
+<description>&lt;h3&gt;Ground Supply Symbol&lt;/h3&gt;
+&lt;p&gt;Generic signal ground supply symbol.&lt;/p&gt;</description>
 <gates>
-<gate name="VDD" symbol="VDD" x="0" y="0"/>
+<gate name="1" symbol="DGND" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -1918,11 +1918,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 </devices>
 </deviceset>
-<deviceset name="GND" prefix="GND">
-<description>&lt;h3&gt;Ground Supply Symbol&lt;/h3&gt;
-&lt;p&gt;Generic signal ground supply symbol.&lt;/p&gt;</description>
+<deviceset name="3.3V" prefix="SUPPLY">
+<description>&lt;h3&gt;3.3V Supply Symbol&lt;/h3&gt;
+&lt;p&gt;Power supply symbol for a specifically-stated 3.3V source.&lt;/p&gt;</description>
 <gates>
-<gate name="1" symbol="DGND" x="0" y="0"/>
+<gate name="G$1" symbol="3.3V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -2542,62 +2542,6 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="-180"/>
 <circle x="0" y="0" radius="2.794" width="0.127" layer="39"/>
 <hole x="0" y="0" drill="3.048"/>
-</package>
-<package name="SJ_2S">
-<description>Small solder jumper with big paste layer so it will short during reflow.</description>
-<wire x1="0.8" y1="-1" x2="-0.8" y2="-1" width="0.1524" layer="21"/>
-<wire x1="0.8" y1="1" x2="1.1" y2="0.75" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.1" y1="0.75" x2="-0.8" y2="1" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.1" y1="-0.75" x2="-0.8" y2="-1" width="0.1524" layer="21" curve="90.114706"/>
-<wire x1="0.8" y1="-1" x2="1.1" y2="-0.75" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.1" y1="-0.75" x2="1.1" y2="0.75" width="0.1524" layer="21"/>
-<wire x1="-1.1" y1="-0.75" x2="-1.1" y2="0.75" width="0.1524" layer="21"/>
-<wire x1="-0.8" y1="1" x2="0.8" y2="1" width="0.1524" layer="21"/>
-<smd name="1" x="-0.4119" y="0" dx="0.635" dy="1.27" layer="1"/>
-<smd name="2" x="0.4119" y="0" dx="0.635" dy="1.27" layer="1"/>
-<text x="-0.9498" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-0.9498" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.2192" y1="-1.143" x2="1.2192" y2="1.143" layer="31"/>
-</package>
-<package name="SJ_2S-TRACE">
-<description>Solder jumper, small, shorted with trace. No paste layer. Trace is cuttable.</description>
-<wire x1="0.8255" y1="-1.016" x2="-0.8255" y2="-1.016" width="0.2032" layer="21"/>
-<wire x1="0.8255" y1="1.016" x2="1.0795" y2="0.762" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1.0795" y1="0.762" x2="-0.8255" y2="1.016" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1.0795" y1="-0.762" x2="-0.8255" y2="-1.016" width="0.2032" layer="21" curve="90"/>
-<wire x1="0.8255" y1="-1.016" x2="1.0795" y2="-0.762" width="0.2032" layer="21" curve="90"/>
-<wire x1="-0.8255" y1="1.016" x2="0.8255" y2="1.016" width="0.2032" layer="21"/>
-<wire x1="-0.381" y1="0" x2="0.381" y2="0" width="0.2032" layer="1"/>
-<smd name="1" x="-0.508" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="2" x="0.508" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<text x="-0.9525" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-0.9525" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
-<package name="SJ_2S-NOTRACE">
-<wire x1="0.8" y1="-1" x2="-0.8" y2="-1" width="0.2032" layer="21"/>
-<wire x1="0.8" y1="1" x2="1" y2="0.7" width="0.2032" layer="21" curve="-90.076445"/>
-<wire x1="-1" y1="0.7" x2="-0.8" y2="1" width="0.2032" layer="21" curve="-90.03821"/>
-<wire x1="-1" y1="-0.7" x2="-0.8" y2="-1" width="0.2032" layer="21" curve="90.03821"/>
-<wire x1="0.8" y1="-1" x2="1" y2="-0.7" width="0.2032" layer="21" curve="90.03821"/>
-<wire x1="-0.8" y1="1" x2="0.8" y2="1" width="0.2032" layer="21"/>
-<smd name="1" x="-0.4009" y="0" dx="0.635" dy="1.27" layer="1" rot="R180" cream="no"/>
-<smd name="2" x="0.4127" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<text x="-0.9525" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-0.9525" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.016" y1="-1.016" x2="1.016" y2="1.016" layer="31"/>
-</package>
-<package name="SJ_2S-NO">
-<description>Small solder jumper with no paste layer so it will open after reflow.</description>
-<wire x1="0.8" y1="-1" x2="-0.8" y2="-1" width="0.2032" layer="21"/>
-<wire x1="0.8" y1="1" x2="1" y2="0.7" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1" y1="0.7" x2="-0.8" y2="1" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1" y1="-0.7" x2="-0.8" y2="-1" width="0.2032" layer="21" curve="90"/>
-<wire x1="0.8" y1="-1" x2="1" y2="-0.7" width="0.2032" layer="21" curve="90"/>
-<wire x1="-0.8" y1="1" x2="0.8" y2="1" width="0.2032" layer="21"/>
-<smd name="1" x="-0.45" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="2" x="0.45" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<text x="-0.908" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-0.908" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -6163,16 +6107,6 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <symbol name="STAND-OFF">
 <circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
 </symbol>
-<symbol name="SJ">
-<wire x1="0.381" y1="0.635" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
-<wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
-<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.651" y2="0" width="0.1524" layer="94"/>
-<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="GND">
@@ -6224,51 +6158,6 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 </technologies>
 </device>
 <device name="TIGHT" package="STAND-OFF-TIGHT">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SOLDERJUMPER" prefix="SJ">
-<description>&lt;b&gt;Solder Jumper&lt;/b&gt;
-Standard SMD solder jumper. Used to automate production. Two varients : Normally Open and Normally Closed are the same, but have different paste layers. NC will have a large amount of paste and should jumper during reflow.</description>
-<gates>
-<gate name="1" symbol="SJ" x="0" y="0"/>
-</gates>
-<devices>
-<device name="NC" package="SJ_2S">
-<connects>
-<connect gate="1" pin="1" pad="1"/>
-<connect gate="1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="TRACE" package="SJ_2S-TRACE">
-<connects>
-<connect gate="1" pin="1" pad="1"/>
-<connect gate="1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="NC2" package="SJ_2S-NOTRACE">
-<connects>
-<connect gate="1" pin="1" pad="1"/>
-<connect gate="1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="NO" package="SJ_2S-NO">
-<connects>
-<connect gate="1" pin="1" pad="1"/>
-<connect gate="1" pin="2" pad="2"/>
-</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -7538,6 +7427,40 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="0.3175" y="-0.127"/>
 </polygon>
 </package>
+<package name="SMT-JUMPER_2_NC_TRACE_NO-SILK">
+<smd name="1" x="-0.508" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0.508" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="-0.508" y1="0" x2="0.508" y2="0" width="0.254" layer="1"/>
+<polygon width="0.127" layer="29">
+<vertex x="-0.1905" y="0.127"/>
+<vertex x="0.1905" y="0.127"/>
+<vertex x="0.1905" y="-0.127"/>
+<vertex x="-0.1905" y="-0.127"/>
+</polygon>
+</package>
+<package name="SMT-JUMPER_2_NC_TRACE_SILK">
+<wire x1="0.762" y1="-1.016" x2="-0.762" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="0.762" y1="1.016" x2="1.2192" y2="0.5588" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.2192" y1="0.5588" x2="-0.762" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.2192" y1="-0.5588" x2="-0.762" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="0.762" y1="-1.016" x2="1.2192" y2="-0.5588" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.2192" y1="-0.5588" x2="1.2192" y2="0.5588" width="0.1524" layer="21"/>
+<wire x1="-1.2192" y1="-0.5588" x2="-1.2192" y2="0.5588" width="0.1524" layer="21"/>
+<wire x1="-0.762" y1="1.016" x2="0.762" y2="1.016" width="0.1524" layer="21"/>
+<smd name="1" x="-0.508" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0.508" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="-0.508" y1="0" x2="0.508" y2="0" width="0.254" layer="1"/>
+<polygon width="0.127" layer="29">
+<vertex x="-0.1905" y="0.127"/>
+<vertex x="0.1905" y="0.127"/>
+<vertex x="0.1905" y="-0.127"/>
+<vertex x="-0.1905" y="-0.127"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="SMT-JUMPER_3_1-NC_TRACE">
@@ -7556,6 +7479,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
 <pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
 <wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+</symbol>
+<symbol name="SMT-JUMPER_2_NC_TRACE">
+<wire x1="0.381" y1="0.635" x2="1.016" y2="0" width="1.27" layer="94" curve="-90" cap="flat"/>
+<wire x1="1.016" y1="0" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-90" cap="flat"/>
+<wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.651" y2="0" width="0.1524" layer="94"/>
+<text x="-2.54" y="2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<wire x1="-0.762" y1="0" x2="1.016" y2="0" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -7594,6 +7529,39 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 </devices>
 </deviceset>
+<deviceset name="JUMPER-SMT_2_NC_TRACE" prefix="JP">
+<description>&lt;h3&gt;Normally closed trace jumper&lt;/h3&gt;
+&lt;p&gt;This jumper has a trace between two pads so it's normally closed (NC). Use a razor knife to open the connection. For best results follow the IPC guidelines for cutting traces:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cutout at least 0.063 mm (0.005 in).&lt;/li&gt;
+&lt;li&gt;Remove all loose material to clean up the cut area.&lt;/li&gt;
+&lt;li&gt;Seal the cut with an approved epoxy.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Reapply solder to reclose the connection.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="SMT-JUMPER_2_NC_TRACE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_NO-SILK" package="SMT-JUMPER_2_NC_TRACE_NO-SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SILK" package="SMT-JUMPER_2_NC_TRACE_SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -7607,8 +7575,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </classes>
 <parts>
 <part name="U1" library="SparkX" deviceset="MLX90393_MAGNETOMETER" device=""/>
-<part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
-<part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="R1" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
 <part name="R2" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="0.1uF"/>
@@ -7621,24 +7587,30 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="J2" library="SparkFun-Connectors" deviceset="CONN_06" device="NO_SILK_FEMALE_PTH"/>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
 <part name="C4" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="0.1uF"/>
-<part name="SJ1" library="SparkFun" deviceset="SOLDERJUMPER" device="TRACE" value=""/>
-<part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
 <part name="SJ2" library="TestAperatures" deviceset="JUMPER-PAD-3-NC_BY_TRACE" device=""/>
-<part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
 <part name="U$2" library="SparkX" deviceset="SPARKX-LOGO" device="2"/>
-<part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
-<part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
 <part name="SJ3" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_1-NC_TRACE" device="_SILK" value=""/>
 <part name="SJ4" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_1-NC_TRACE" device="_SILK" value=""/>
-<part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
-<part name="SUPPLY7" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
 <part name="GND6" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND7" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="SJ1" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" value=""/>
+<part name="SUPPLY8" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="SUPPLY9" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="SUPPLY11" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="SUPPLY12" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="SUPPLY13" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="SUPPLY14" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND8" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="200.66" y="114.3" size="1.778" layer="97">Address selection jumpers SJ3 and SJ4</text>
+<text x="203.2" y="113.538" size="1.778" layer="97">Address selection jumpers</text>
 <text x="236.22" y="7.62" size="2.54" layer="94">v10</text>
 <text x="168.148" y="11.176" size="2.54" layer="94">Joel Bartlett</text>
 <text x="5.08" y="177.8" size="3.81" layer="97">MLX90393 Breakout</text>
@@ -7655,14 +7627,15 @@ for I2C operation</text>
 <wire x1="147.32" y1="66.04" x2="147.32" y2="35.56" width="0.1524" layer="97" style="longdash"/>
 <text x="5.08" y="132.08" size="3.175" layer="97">Magnetometer Circuitry</text>
 <text x="5.08" y="58.42" size="3.175" layer="97">User Ports</text>
-<text x="5.08" y="55.88" size="2.032" layer="97" align="top-left">Apply regulated 2.2-3.6V to VDD</text>
+<text x="5.08" y="55.88" size="2.032" layer="97" align="top-left">VCC must be 2.2-3.6V</text>
 <wire x1="147.32" y1="66.04" x2="248.92" y2="66.04" width="0.1524" layer="97" style="longdash"/>
 <wire x1="0" y1="139.7" x2="91.44" y2="139.7" width="0.1524" layer="97" style="longdash"/>
 <wire x1="91.44" y1="185.42" x2="91.44" y2="139.7" width="0.1524" layer="97" style="longdash"/>
-<text x="119.38" y="137.16" size="1.778" layer="97">Pulling up SENB/CS to VDD 
-through SJ1 enables I2C mode. </text>
-<text x="60.96" y="50.8" size="2.032" layer="97" align="top-left">I2C Ports</text>
-<text x="106.68" y="50.8" size="2.032" layer="97" align="top-left">SPI Ports</text>
+<text x="128.016" y="140.716" size="1.778" layer="97">SJ1 Controls I2C/SPI
+Closed (Default): I2C
+Open: SPI</text>
+<text x="62.484" y="18.288" size="2.032" layer="97" align="top-left">I2C Port</text>
+<text x="109.728" y="19.05" size="2.032" layer="97" align="top-left">SPI Port</text>
 <wire x1="208.28" y1="132.08" x2="213.36" y2="132.08" width="0.2032" layer="97"/>
 <wire x1="213.36" y1="132.08" x2="218.44" y2="132.08" width="0.2032" layer="97"/>
 <wire x1="218.44" y1="132.08" x2="233.68" y2="132.08" width="0.2032" layer="97"/>
@@ -7676,9 +7649,9 @@ through SJ1 enables I2C mode. </text>
 <wire x1="218.44" y1="129.54" x2="233.68" y2="129.54" width="0.2032" layer="97"/>
 <wire x1="213.36" y1="129.54" x2="208.28" y2="129.54" width="0.2032" layer="97"/>
 <wire x1="208.28" y1="129.54" x2="208.28" y2="132.08" width="0.2032" layer="97"/>
-<text x="209.804" y="130.302" size="1.27" layer="97">A1</text>
-<text x="214.63" y="130.302" size="1.27" layer="97">A0</text>
-<text x="220.98" y="130.302" size="1.27" layer="97">I2C Address</text>
+<text x="209.804" y="130.048" size="1.27" layer="97">A1</text>
+<text x="214.884" y="130.048" size="1.27" layer="97">A0</text>
+<text x="219.964" y="130.048" size="1.27" layer="97">I2C Address</text>
 <text x="222.25" y="127.508" size="1.27" layer="97">0001100</text>
 <text x="222.25" y="124.968" size="1.27" layer="97">0001101</text>
 <text x="222.25" y="122.428" size="1.27" layer="97">0001110</text>
@@ -7696,27 +7669,25 @@ through SJ1 enables I2C mode. </text>
 <wire x1="208.28" y1="124.46" x2="208.28" y2="121.92" width="0.2032" layer="97"/>
 <wire x1="213.36" y1="129.54" x2="213.36" y2="119.38" width="0.2032" layer="97"/>
 <wire x1="218.44" y1="129.54" x2="218.44" y2="119.38" width="0.2032" layer="97"/>
-<text x="208.788" y="127.508" size="1.27" layer="97">GND</text>
-<text x="213.868" y="127.508" size="1.27" layer="97">GND</text>
-<text x="208.788" y="124.968" size="1.27" layer="97">GND</text>
-<text x="213.868" y="122.428" size="1.27" layer="97">GND</text>
+<text x="209.042" y="127.508" size="1.27" layer="97">GND</text>
+<text x="214.122" y="127.508" size="1.27" layer="97">GND</text>
+<text x="209.042" y="124.968" size="1.27" layer="97">GND</text>
+<text x="214.122" y="122.428" size="1.27" layer="97">GND</text>
 <text x="214.122" y="124.968" size="1.27" layer="97">VDD</text>
 <text x="209.042" y="122.428" size="1.27" layer="97">VDD</text>
 <text x="209.042" y="119.888" size="1.27" layer="97">VDD</text>
 <text x="214.122" y="119.888" size="1.27" layer="97">VDD</text>
-<text x="7.112" y="159.258" size="2.032" layer="97" align="top-left">SPI 4-WIRE:
+<text x="8.89" y="158.75" size="2.032" layer="97" align="top-left">SPI 4-WIRE:
   Jumpers SJ2 can be opened to 
   remove pull-ups on the SPI lines.
   SJ1 must be open for SPI operation.</text>
-<text x="209.55" y="134.112" size="1.778" layer="97">I2C Addressing Table</text>
+<text x="205.994" y="133.35" size="1.778" layer="97">I2C Addressing Table</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="134.62" y="114.3"/>
-<instance part="SUPPLY1" gate="VDD" x="104.14" y="147.32"/>
-<instance part="GND1" gate="1" x="104.14" y="96.52"/>
 <instance part="R1" gate="G$1" x="167.64" y="132.08" rot="R90"/>
 <instance part="R2" gate="G$1" x="182.88" y="132.08" rot="R90"/>
-<instance part="C1" gate="G$1" x="109.22" y="114.3"/>
+<instance part="C1" gate="G$1" x="104.14" y="114.3"/>
 <instance part="U$1" gate="G$1" x="231.14" y="50.8"/>
 <instance part="JP3" gate="G$1" x="243.84" y="30.48"/>
 <instance part="JP4" gate="G$1" x="238.76" y="30.48"/>
@@ -7726,91 +7697,46 @@ through SJ1 enables I2C mode. </text>
 <instance part="GND4" gate="1" x="55.88" y="17.78"/>
 <instance part="J2" gate="G$1" x="119.38" y="27.94" rot="MR0"/>
 <instance part="GND5" gate="1" x="101.6" y="17.78"/>
-<instance part="C4" gate="G$1" x="99.06" y="114.3"/>
-<instance part="SJ1" gate="1" x="160.02" y="139.7" rot="R90"/>
-<instance part="SUPPLY3" gate="VDD" x="160.02" y="147.32"/>
+<instance part="C4" gate="G$1" x="93.98" y="114.3"/>
 <instance part="SJ2" gate="G$1" x="175.26" y="139.7" rot="R270"/>
-<instance part="SUPPLY4" gate="VDD" x="175.26" y="147.32"/>
 <instance part="U$2" gate="G$1" x="177.8" y="48.26"/>
-<instance part="SUPPLY2" gate="VDD" x="55.88" y="40.64"/>
-<instance part="SUPPLY5" gate="VDD" x="101.6" y="40.64"/>
 <instance part="SJ3" gate="G$1" x="210.82" y="99.06"/>
 <instance part="SJ4" gate="G$1" x="233.68" y="99.06"/>
-<instance part="SUPPLY6" gate="VDD" x="210.82" y="106.68"/>
-<instance part="SUPPLY7" gate="VDD" x="233.68" y="106.68"/>
 <instance part="GND6" gate="1" x="210.82" y="88.9"/>
 <instance part="GND7" gate="1" x="233.68" y="88.9"/>
+<instance part="SJ1" gate="G$1" x="160.02" y="139.7" rot="R90"/>
+<instance part="SUPPLY8" gate="G$1" x="55.88" y="40.64"/>
+<instance part="SUPPLY9" gate="G$1" x="101.6" y="40.64"/>
+<instance part="SUPPLY11" gate="G$1" x="160.02" y="147.32"/>
+<instance part="SUPPLY12" gate="G$1" x="175.26" y="147.32"/>
+<instance part="SUPPLY13" gate="G$1" x="210.82" y="106.68"/>
+<instance part="SUPPLY14" gate="G$1" x="233.68" y="106.68"/>
+<instance part="SUPPLY1" gate="G$1" x="114.3" y="129.54"/>
+<instance part="SUPPLY2" gate="G$1" x="104.14" y="121.92"/>
+<instance part="SUPPLY3" gate="G$1" x="93.98" y="121.92"/>
+<instance part="GND2" gate="1" x="93.98" y="106.68"/>
+<instance part="GND3" gate="1" x="114.3" y="99.06"/>
+<instance part="GND8" gate="1" x="104.14" y="106.68"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="VDD" class="0">
-<segment>
-<pinref part="SUPPLY1" gate="VDD" pin="VDD"/>
-<pinref part="U1" gate="G$1" pin="VDD"/>
-<wire x1="104.14" y1="127" x2="104.14" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="127" x2="114.3" y2="127" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="VDDIO"/>
-<wire x1="114.3" y1="127" x2="109.22" y2="127" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="127" x2="104.14" y2="127" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="124.46" x2="114.3" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="124.46" x2="114.3" y2="127" width="0.1524" layer="91"/>
-<junction x="114.3" y="127"/>
-<pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="99.06" y1="119.38" x2="99.06" y2="127" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="127" x2="104.14" y2="127" width="0.1524" layer="91"/>
-<junction x="104.14" y="127"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="109.22" y1="119.38" x2="109.22" y2="127" width="0.1524" layer="91"/>
-<junction x="109.22" y="127"/>
-</segment>
-<segment>
-<pinref part="SJ1" gate="1" pin="2"/>
-<pinref part="SUPPLY3" gate="VDD" pin="VDD"/>
-<wire x1="160.02" y1="147.32" x2="160.02" y2="144.78" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SJ2" gate="G$1" pin="2"/>
-<pinref part="SUPPLY4" gate="VDD" pin="VDD"/>
-<wire x1="175.26" y1="147.32" x2="175.26" y2="144.78" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="68.58" y1="25.4" x2="55.88" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="2"/>
-<pinref part="SUPPLY2" gate="VDD" pin="VDD"/>
-<wire x1="55.88" y1="40.64" x2="55.88" y2="25.4" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY5" gate="VDD" pin="VDD"/>
-<pinref part="J2" gate="G$1" pin="2"/>
-<wire x1="101.6" y1="40.64" x2="101.6" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="25.4" x2="114.3" y2="25.4" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY7" gate="VDD" pin="VDD"/>
-<pinref part="SJ4" gate="G$1" pin="1"/>
-<wire x1="233.68" y1="106.68" x2="233.68" y2="104.14" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY6" gate="VDD" pin="VDD"/>
-<pinref part="SJ3" gate="G$1" pin="1"/>
-<wire x1="210.82" y1="106.68" x2="210.82" y2="104.14" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="GND" class="0">
 <segment>
-<pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="104.14" y1="99.06" x2="104.14" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="GND"/>
-<wire x1="116.84" y1="104.14" x2="109.22" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="109.22" y1="104.14" x2="104.14" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="111.76" x2="109.22" y2="104.14" width="0.1524" layer="91"/>
-<junction x="109.22" y="104.14"/>
 <pinref part="C4" gate="G$1" pin="2"/>
-<wire x1="104.14" y1="104.14" x2="99.06" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="104.14" x2="99.06" y2="111.76" width="0.1524" layer="91"/>
-<junction x="104.14" y="104.14"/>
+<wire x1="93.98" y1="109.22" x2="93.98" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND3" gate="1" pin="GND"/>
+<pinref part="U1" gate="G$1" pin="GND"/>
+<wire x1="116.84" y1="104.14" x2="114.3" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="104.14" x2="114.3" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="104.14" y1="111.76" x2="104.14" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="GND8" gate="1" pin="GND"/>
 </segment>
 <segment>
 <wire x1="68.58" y1="22.86" x2="55.88" y2="22.86" width="0.1524" layer="91"/>
@@ -7880,13 +7806,13 @@ through SJ1 enables I2C mode. </text>
 <net name="CS" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="SENB/CS"/>
-<pinref part="SJ1" gate="1" pin="1"/>
 <wire x1="152.4" y1="127" x2="160.02" y2="127" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="127" x2="160.02" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="132.08" x2="160.02" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="132.08" x2="157.48" y2="132.08" width="0.1524" layer="91"/>
 <junction x="160.02" y="132.08"/>
 <label x="157.48" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="SJ1" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="6"/>
@@ -7928,12 +7854,22 @@ through SJ1 enables I2C mode. </text>
 <wire x1="152.4" y1="114.3" x2="160.02" y2="114.3" width="0.1524" layer="91"/>
 <label x="160.02" y="114.3" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="5"/>
+<wire x1="68.58" y1="33.02" x2="66.04" y2="33.02" width="0.1524" layer="91"/>
+<label x="66.04" y="33.02" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="TRIG" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="INT/TRIG"/>
 <wire x1="152.4" y1="111.76" x2="160.02" y2="111.76" width="0.1524" layer="91"/>
 <label x="160.02" y="111.76" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="6"/>
+<wire x1="68.58" y1="35.56" x2="66.04" y2="35.56" width="0.1524" layer="91"/>
+<label x="66.04" y="35.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="A0" class="0">
@@ -7958,6 +7894,60 @@ through SJ1 enables I2C mode. </text>
 <pinref part="SJ4" gate="G$1" pin="2"/>
 <wire x1="228.6" y1="99.06" x2="226.06" y2="99.06" width="0.1524" layer="91"/>
 <label x="226.06" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="3.3V" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="2"/>
+<wire x1="101.6" y1="40.64" x2="101.6" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="25.4" x2="114.3" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="SUPPLY9" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="25.4" x2="55.88" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="55.88" y1="40.64" x2="55.88" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="SUPPLY8" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="SJ3" gate="G$1" pin="1"/>
+<wire x1="210.82" y1="106.68" x2="210.82" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="SUPPLY13" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="SJ4" gate="G$1" pin="1"/>
+<wire x1="233.68" y1="106.68" x2="233.68" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="SUPPLY14" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="SJ2" gate="G$1" pin="2"/>
+<wire x1="175.26" y1="147.32" x2="175.26" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="SUPPLY12" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<wire x1="160.02" y1="147.32" x2="160.02" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="SJ1" gate="G$1" pin="2"/>
+<pinref part="SUPPLY11" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="VDD"/>
+<wire x1="116.84" y1="127" x2="114.3" y2="127" width="0.1524" layer="91"/>
+<junction x="114.3" y="127"/>
+<pinref part="SUPPLY1" gate="G$1" pin="3.3V"/>
+<wire x1="114.3" y1="129.54" x2="114.3" y2="127" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="VDDIO"/>
+<wire x1="116.84" y1="124.46" x2="114.3" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="124.46" x2="114.3" y2="127" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY2" gate="G$1" pin="3.3V"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="104.14" y1="119.38" x2="104.14" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="93.98" y1="119.38" x2="93.98" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="SUPPLY3" gate="G$1" pin="3.3V"/>
 </segment>
 </net>
 </nets>
