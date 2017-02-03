@@ -7682,6 +7682,7 @@ Open: SPI</text>
   remove pull-ups on the SPI lines.
   SJ1 must be open for SPI operation.</text>
 <text x="205.994" y="133.35" size="1.778" layer="97">I2C Addressing Table</text>
+<text x="199.898" y="81.788" size="1.778" layer="97">Default 7-bit I2C Adr: 0x0C</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="134.62" y="114.3"/>
