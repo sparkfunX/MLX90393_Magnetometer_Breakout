@@ -29,10 +29,10 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -52,13 +52,13 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -94,7 +94,7 @@
 <wire x1="0" y1="0" x2="0" y2="20.32" width="0.2032" layer="20"/>
 <wire x1="0" y1="20.32" x2="20.32" y2="20.32" width="0.2032" layer="20"/>
 <wire x1="20.32" y1="20.32" x2="20.32" y2="0" width="0.2032" layer="20"/>
-<text x="17.78" y="3.302" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">VCC</text>
+<text x="17.78" y="3.302" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">3.3V</text>
 <text x="17.78" y="5.842" size="1.016" layer="21" font="vector" ratio="15" distance="15" align="bottom-right">SDA</text>
 <text x="17.78" y="8.382" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">SCL</text>
 <text x="17.78" y="0.762" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">GND</text>
@@ -113,7 +113,7 @@
 <wire x1="8.14705" y1="15.789275" x2="8.40105" y2="16.043275" width="0.254" layer="21"/>
 <wire x1="8.42645" y1="15.509875" x2="8.42645" y2="16.068675" width="0.254" layer="21"/>
 <text x="2.54" y="0.762" size="1.016" layer="21" font="vector" ratio="15" rot="SR0">GND</text>
-<text x="2.54" y="3.302" size="1.016" layer="21" font="vector" ratio="15" rot="SR0">VCC</text>
+<text x="2.54" y="3.302" size="1.016" layer="21" font="vector" ratio="15" rot="SR0">3.3V</text>
 <text x="2.54" y="5.842" size="1.016" layer="21" font="vector" ratio="15">SCLK</text>
 <text x="2.54" y="8.382" size="1.016" layer="21" font="vector" ratio="15">MOSI</text>
 <text x="2.54" y="10.922" size="1.016" layer="21" font="vector" ratio="15">MISO</text>
@@ -124,11 +124,23 @@
 <text x="10.033" y="13.462" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="center">PU</text>
 <text x="17.78" y="10.922" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">INT</text>
 <text x="17.78" y="13.462" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">TRIG</text>
+<text x="4.191" y="13.462" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">CS</text>
+<text x="5.715" y="10.922" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">MISO</text>
+<text x="5.715" y="8.382" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">MOSI</text>
+<text x="6.096" y="5.842" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">SCLK</text>
+<text x="5.715" y="3.302" size="1.016" layer="22" font="vector" ratio="15" rot="SMR0">3.3V</text>
+<text x="5.08" y="0.762" size="1.016" layer="22" font="vector" ratio="15" rot="SMR0">GND</text>
+<text x="14.859" y="0.762" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">GND</text>
+<text x="14.351" y="3.302" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">3.3V</text>
+<text x="14.859" y="5.842" size="1.016" layer="22" font="vector" ratio="15" distance="15" rot="MR0" align="bottom-right">SDA</text>
+<text x="14.859" y="8.382" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">SCL</text>
+<text x="15.24" y="10.922" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">INT</text>
+<text x="14.224" y="13.462" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">TRIG</text>
 <wire x1="41.148" y1="0" x2="20.828" y2="0" width="0.2032" layer="20"/>
 <wire x1="20.828" y1="0" x2="20.828" y2="20.32" width="0.2032" layer="20"/>
 <wire x1="20.828" y1="20.32" x2="41.148" y2="20.32" width="0.2032" layer="20"/>
 <wire x1="41.148" y1="20.32" x2="41.148" y2="0" width="0.2032" layer="20"/>
-<text x="38.608" y="3.302" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">VCC</text>
+<text x="38.608" y="3.302" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">3.3V</text>
 <text x="38.608" y="5.842" size="1.016" layer="21" font="vector" ratio="15" distance="15" align="bottom-right">SDA</text>
 <text x="38.608" y="8.382" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">SCL</text>
 <text x="38.608" y="0.762" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">GND</text>
@@ -147,7 +159,7 @@
 <wire x1="28.97505" y1="15.789275" x2="29.22905" y2="16.043275" width="0.254" layer="21"/>
 <wire x1="29.25445" y1="15.509875" x2="29.25445" y2="16.068675" width="0.254" layer="21"/>
 <text x="23.368" y="0.762" size="1.016" layer="21" font="vector" ratio="15" rot="SR0">GND</text>
-<text x="23.368" y="3.302" size="1.016" layer="21" font="vector" ratio="15" rot="SR0">VCC</text>
+<text x="23.368" y="3.302" size="1.016" layer="21" font="vector" ratio="15" rot="SR0">3.3V</text>
 <text x="23.368" y="5.842" size="1.016" layer="21" font="vector" ratio="15">SCLK</text>
 <text x="23.368" y="8.382" size="1.016" layer="21" font="vector" ratio="15">MOSI</text>
 <text x="23.368" y="10.922" size="1.016" layer="21" font="vector" ratio="15">MISO</text>
@@ -158,11 +170,23 @@
 <text x="30.861" y="13.462" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="center">PU</text>
 <text x="38.608" y="10.922" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">INT</text>
 <text x="38.608" y="13.462" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">TRIG</text>
+<text x="25.019" y="13.462" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">CS</text>
+<text x="26.543" y="10.922" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">MISO</text>
+<text x="26.543" y="8.382" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">MOSI</text>
+<text x="26.924" y="5.842" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">SCLK</text>
+<text x="26.543" y="3.302" size="1.016" layer="22" font="vector" ratio="15" rot="SMR0">3.3V</text>
+<text x="25.908" y="0.762" size="1.016" layer="22" font="vector" ratio="15" rot="SMR0">GND</text>
+<text x="35.687" y="0.762" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">GND</text>
+<text x="35.179" y="3.302" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">3.3V</text>
+<text x="35.687" y="5.842" size="1.016" layer="22" font="vector" ratio="15" distance="15" rot="MR0" align="bottom-right">SDA</text>
+<text x="35.687" y="8.382" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">SCL</text>
+<text x="36.068" y="10.922" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">INT</text>
+<text x="35.052" y="13.462" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">TRIG</text>
 <wire x1="61.976" y1="0" x2="41.656" y2="0" width="0.2032" layer="20"/>
 <wire x1="41.656" y1="0" x2="41.656" y2="20.32" width="0.2032" layer="20"/>
 <wire x1="41.656" y1="20.32" x2="61.976" y2="20.32" width="0.2032" layer="20"/>
 <wire x1="61.976" y1="20.32" x2="61.976" y2="0" width="0.2032" layer="20"/>
-<text x="59.436" y="3.302" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">VCC</text>
+<text x="59.436" y="3.302" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">3.3V</text>
 <text x="59.436" y="5.842" size="1.016" layer="21" font="vector" ratio="15" distance="15" align="bottom-right">SDA</text>
 <text x="59.436" y="8.382" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">SCL</text>
 <text x="59.436" y="0.762" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">GND</text>
@@ -181,7 +205,7 @@
 <wire x1="49.80305" y1="15.789275" x2="50.05705" y2="16.043275" width="0.254" layer="21"/>
 <wire x1="50.08245" y1="15.509875" x2="50.08245" y2="16.068675" width="0.254" layer="21"/>
 <text x="44.196" y="0.762" size="1.016" layer="21" font="vector" ratio="15" rot="SR0">GND</text>
-<text x="44.196" y="3.302" size="1.016" layer="21" font="vector" ratio="15" rot="SR0">VCC</text>
+<text x="44.196" y="3.302" size="1.016" layer="21" font="vector" ratio="15" rot="SR0">3.3V</text>
 <text x="44.196" y="5.842" size="1.016" layer="21" font="vector" ratio="15">SCLK</text>
 <text x="44.196" y="8.382" size="1.016" layer="21" font="vector" ratio="15">MOSI</text>
 <text x="44.196" y="10.922" size="1.016" layer="21" font="vector" ratio="15">MISO</text>
@@ -192,11 +216,23 @@
 <text x="51.689" y="13.462" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="center">PU</text>
 <text x="59.436" y="10.922" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">INT</text>
 <text x="59.436" y="13.462" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">TRIG</text>
+<text x="45.847" y="13.462" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">CS</text>
+<text x="47.371" y="10.922" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">MISO</text>
+<text x="47.371" y="8.382" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">MOSI</text>
+<text x="47.752" y="5.842" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">SCLK</text>
+<text x="47.371" y="3.302" size="1.016" layer="22" font="vector" ratio="15" rot="SMR0">3.3V</text>
+<text x="46.736" y="0.762" size="1.016" layer="22" font="vector" ratio="15" rot="SMR0">GND</text>
+<text x="56.515" y="0.762" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">GND</text>
+<text x="56.007" y="3.302" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">3.3V</text>
+<text x="56.515" y="5.842" size="1.016" layer="22" font="vector" ratio="15" distance="15" rot="MR0" align="bottom-right">SDA</text>
+<text x="56.515" y="8.382" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">SCL</text>
+<text x="56.896" y="10.922" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">INT</text>
+<text x="55.88" y="13.462" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">TRIG</text>
 <wire x1="20.32" y1="20.828" x2="0" y2="20.828" width="0.2032" layer="20"/>
 <wire x1="0" y1="20.828" x2="0" y2="41.148" width="0.2032" layer="20"/>
 <wire x1="0" y1="41.148" x2="20.32" y2="41.148" width="0.2032" layer="20"/>
 <wire x1="20.32" y1="41.148" x2="20.32" y2="20.828" width="0.2032" layer="20"/>
-<text x="17.78" y="24.13" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">VCC</text>
+<text x="17.78" y="24.13" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">3.3V</text>
 <text x="17.78" y="26.67" size="1.016" layer="21" font="vector" ratio="15" distance="15" align="bottom-right">SDA</text>
 <text x="17.78" y="29.21" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">SCL</text>
 <text x="17.78" y="21.59" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">GND</text>
@@ -215,7 +251,7 @@
 <wire x1="8.14705" y1="36.617275" x2="8.40105" y2="36.871275" width="0.254" layer="21"/>
 <wire x1="8.42645" y1="36.337875" x2="8.42645" y2="36.896675" width="0.254" layer="21"/>
 <text x="2.54" y="21.59" size="1.016" layer="21" font="vector" ratio="15" rot="SR0">GND</text>
-<text x="2.54" y="24.13" size="1.016" layer="21" font="vector" ratio="15" rot="SR0">VCC</text>
+<text x="2.54" y="24.13" size="1.016" layer="21" font="vector" ratio="15" rot="SR0">3.3V</text>
 <text x="2.54" y="26.67" size="1.016" layer="21" font="vector" ratio="15">SCLK</text>
 <text x="2.54" y="29.21" size="1.016" layer="21" font="vector" ratio="15">MOSI</text>
 <text x="2.54" y="31.75" size="1.016" layer="21" font="vector" ratio="15">MISO</text>
@@ -226,11 +262,23 @@
 <text x="10.033" y="34.29" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="center">PU</text>
 <text x="17.78" y="31.75" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">INT</text>
 <text x="17.78" y="34.29" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">TRIG</text>
+<text x="4.191" y="34.29" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">CS</text>
+<text x="5.715" y="31.75" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">MISO</text>
+<text x="5.715" y="29.21" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">MOSI</text>
+<text x="6.096" y="26.67" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">SCLK</text>
+<text x="5.715" y="24.13" size="1.016" layer="22" font="vector" ratio="15" rot="SMR0">3.3V</text>
+<text x="5.08" y="21.59" size="1.016" layer="22" font="vector" ratio="15" rot="SMR0">GND</text>
+<text x="14.859" y="21.59" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">GND</text>
+<text x="14.351" y="24.13" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">3.3V</text>
+<text x="14.859" y="26.67" size="1.016" layer="22" font="vector" ratio="15" distance="15" rot="MR0" align="bottom-right">SDA</text>
+<text x="14.859" y="29.21" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">SCL</text>
+<text x="15.24" y="31.75" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">INT</text>
+<text x="14.224" y="34.29" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">TRIG</text>
 <wire x1="41.148" y1="20.828" x2="20.828" y2="20.828" width="0.2032" layer="20"/>
 <wire x1="20.828" y1="20.828" x2="20.828" y2="41.148" width="0.2032" layer="20"/>
 <wire x1="20.828" y1="41.148" x2="41.148" y2="41.148" width="0.2032" layer="20"/>
 <wire x1="41.148" y1="41.148" x2="41.148" y2="20.828" width="0.2032" layer="20"/>
-<text x="38.608" y="24.13" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">VCC</text>
+<text x="38.608" y="24.13" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">3.3V</text>
 <text x="38.608" y="26.67" size="1.016" layer="21" font="vector" ratio="15" distance="15" align="bottom-right">SDA</text>
 <text x="38.608" y="29.21" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">SCL</text>
 <text x="38.608" y="21.59" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">GND</text>
@@ -249,7 +297,7 @@
 <wire x1="28.97505" y1="36.617275" x2="29.22905" y2="36.871275" width="0.254" layer="21"/>
 <wire x1="29.25445" y1="36.337875" x2="29.25445" y2="36.896675" width="0.254" layer="21"/>
 <text x="23.368" y="21.59" size="1.016" layer="21" font="vector" ratio="15" rot="SR0">GND</text>
-<text x="23.368" y="24.13" size="1.016" layer="21" font="vector" ratio="15" rot="SR0">VCC</text>
+<text x="23.368" y="24.13" size="1.016" layer="21" font="vector" ratio="15" rot="SR0">3.3V</text>
 <text x="23.368" y="26.67" size="1.016" layer="21" font="vector" ratio="15">SCLK</text>
 <text x="23.368" y="29.21" size="1.016" layer="21" font="vector" ratio="15">MOSI</text>
 <text x="23.368" y="31.75" size="1.016" layer="21" font="vector" ratio="15">MISO</text>
@@ -260,11 +308,23 @@
 <text x="30.861" y="34.29" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="center">PU</text>
 <text x="38.608" y="31.75" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">INT</text>
 <text x="38.608" y="34.29" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">TRIG</text>
+<text x="25.019" y="34.29" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">CS</text>
+<text x="26.543" y="31.75" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">MISO</text>
+<text x="26.543" y="29.21" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">MOSI</text>
+<text x="26.924" y="26.67" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">SCLK</text>
+<text x="26.543" y="24.13" size="1.016" layer="22" font="vector" ratio="15" rot="SMR0">3.3V</text>
+<text x="25.908" y="21.59" size="1.016" layer="22" font="vector" ratio="15" rot="SMR0">GND</text>
+<text x="35.687" y="21.59" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">GND</text>
+<text x="35.179" y="24.13" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">3.3V</text>
+<text x="35.687" y="26.67" size="1.016" layer="22" font="vector" ratio="15" distance="15" rot="MR0" align="bottom-right">SDA</text>
+<text x="35.687" y="29.21" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">SCL</text>
+<text x="36.068" y="31.75" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">INT</text>
+<text x="35.052" y="34.29" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">TRIG</text>
 <wire x1="61.976" y1="20.828" x2="41.656" y2="20.828" width="0.2032" layer="20"/>
 <wire x1="41.656" y1="20.828" x2="41.656" y2="41.148" width="0.2032" layer="20"/>
 <wire x1="41.656" y1="41.148" x2="61.976" y2="41.148" width="0.2032" layer="20"/>
 <wire x1="61.976" y1="41.148" x2="61.976" y2="20.828" width="0.2032" layer="20"/>
-<text x="59.436" y="24.13" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">VCC</text>
+<text x="59.436" y="24.13" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">3.3V</text>
 <text x="59.436" y="26.67" size="1.016" layer="21" font="vector" ratio="15" distance="15" align="bottom-right">SDA</text>
 <text x="59.436" y="29.21" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">SCL</text>
 <text x="59.436" y="21.59" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">GND</text>
@@ -283,7 +343,7 @@
 <wire x1="49.80305" y1="36.617275" x2="50.05705" y2="36.871275" width="0.254" layer="21"/>
 <wire x1="50.08245" y1="36.337875" x2="50.08245" y2="36.896675" width="0.254" layer="21"/>
 <text x="44.196" y="21.59" size="1.016" layer="21" font="vector" ratio="15" rot="SR0">GND</text>
-<text x="44.196" y="24.13" size="1.016" layer="21" font="vector" ratio="15" rot="SR0">VCC</text>
+<text x="44.196" y="24.13" size="1.016" layer="21" font="vector" ratio="15" rot="SR0">3.3V</text>
 <text x="44.196" y="26.67" size="1.016" layer="21" font="vector" ratio="15">SCLK</text>
 <text x="44.196" y="29.21" size="1.016" layer="21" font="vector" ratio="15">MOSI</text>
 <text x="44.196" y="31.75" size="1.016" layer="21" font="vector" ratio="15">MISO</text>
@@ -294,11 +354,23 @@
 <text x="51.689" y="34.29" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="center">PU</text>
 <text x="59.436" y="31.75" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">INT</text>
 <text x="59.436" y="34.29" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">TRIG</text>
+<text x="45.847" y="34.29" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">CS</text>
+<text x="47.371" y="31.75" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">MISO</text>
+<text x="47.371" y="29.21" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">MOSI</text>
+<text x="47.752" y="26.67" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">SCLK</text>
+<text x="47.371" y="24.13" size="1.016" layer="22" font="vector" ratio="15" rot="SMR0">3.3V</text>
+<text x="46.736" y="21.59" size="1.016" layer="22" font="vector" ratio="15" rot="SMR0">GND</text>
+<text x="56.515" y="21.59" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">GND</text>
+<text x="56.007" y="24.13" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">3.3V</text>
+<text x="56.515" y="26.67" size="1.016" layer="22" font="vector" ratio="15" distance="15" rot="MR0" align="bottom-right">SDA</text>
+<text x="56.515" y="29.21" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">SCL</text>
+<text x="56.896" y="31.75" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">INT</text>
+<text x="55.88" y="34.29" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">TRIG</text>
 <wire x1="20.32" y1="41.656" x2="0" y2="41.656" width="0.2032" layer="20"/>
 <wire x1="0" y1="41.656" x2="0" y2="61.976" width="0.2032" layer="20"/>
 <wire x1="0" y1="61.976" x2="20.32" y2="61.976" width="0.2032" layer="20"/>
 <wire x1="20.32" y1="61.976" x2="20.32" y2="41.656" width="0.2032" layer="20"/>
-<text x="17.78" y="44.958" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">VCC</text>
+<text x="17.78" y="44.958" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">3.3V</text>
 <text x="17.78" y="47.498" size="1.016" layer="21" font="vector" ratio="15" distance="15" align="bottom-right">SDA</text>
 <text x="17.78" y="50.038" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">SCL</text>
 <text x="17.78" y="42.418" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">GND</text>
@@ -317,7 +389,7 @@
 <wire x1="8.14705" y1="57.445275" x2="8.40105" y2="57.699275" width="0.254" layer="21"/>
 <wire x1="8.42645" y1="57.165875" x2="8.42645" y2="57.724675" width="0.254" layer="21"/>
 <text x="2.54" y="42.418" size="1.016" layer="21" font="vector" ratio="15" rot="SR0">GND</text>
-<text x="2.54" y="44.958" size="1.016" layer="21" font="vector" ratio="15" rot="SR0">VCC</text>
+<text x="2.54" y="44.958" size="1.016" layer="21" font="vector" ratio="15" rot="SR0">3.3V</text>
 <text x="2.54" y="47.498" size="1.016" layer="21" font="vector" ratio="15">SCLK</text>
 <text x="2.54" y="50.038" size="1.016" layer="21" font="vector" ratio="15">MOSI</text>
 <text x="2.54" y="52.578" size="1.016" layer="21" font="vector" ratio="15">MISO</text>
@@ -328,11 +400,23 @@
 <text x="10.033" y="55.118" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="center">PU</text>
 <text x="17.78" y="52.578" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">INT</text>
 <text x="17.78" y="55.118" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">TRIG</text>
+<text x="4.191" y="55.118" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">CS</text>
+<text x="5.715" y="52.578" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">MISO</text>
+<text x="5.715" y="50.038" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">MOSI</text>
+<text x="6.096" y="47.498" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">SCLK</text>
+<text x="5.715" y="44.958" size="1.016" layer="22" font="vector" ratio="15" rot="SMR0">3.3V</text>
+<text x="5.08" y="42.418" size="1.016" layer="22" font="vector" ratio="15" rot="SMR0">GND</text>
+<text x="14.859" y="42.418" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">GND</text>
+<text x="14.351" y="44.958" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">3.3V</text>
+<text x="14.859" y="47.498" size="1.016" layer="22" font="vector" ratio="15" distance="15" rot="MR0" align="bottom-right">SDA</text>
+<text x="14.859" y="50.038" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">SCL</text>
+<text x="15.24" y="52.578" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">INT</text>
+<text x="14.224" y="55.118" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">TRIG</text>
 <wire x1="41.148" y1="41.656" x2="20.828" y2="41.656" width="0.2032" layer="20"/>
 <wire x1="20.828" y1="41.656" x2="20.828" y2="61.976" width="0.2032" layer="20"/>
 <wire x1="20.828" y1="61.976" x2="41.148" y2="61.976" width="0.2032" layer="20"/>
 <wire x1="41.148" y1="61.976" x2="41.148" y2="41.656" width="0.2032" layer="20"/>
-<text x="38.608" y="44.958" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">VCC</text>
+<text x="38.608" y="44.958" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">3.3V</text>
 <text x="38.608" y="47.498" size="1.016" layer="21" font="vector" ratio="15" distance="15" align="bottom-right">SDA</text>
 <text x="38.608" y="50.038" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">SCL</text>
 <text x="38.608" y="42.418" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">GND</text>
@@ -351,7 +435,7 @@
 <wire x1="28.97505" y1="57.445275" x2="29.22905" y2="57.699275" width="0.254" layer="21"/>
 <wire x1="29.25445" y1="57.165875" x2="29.25445" y2="57.724675" width="0.254" layer="21"/>
 <text x="23.368" y="42.418" size="1.016" layer="21" font="vector" ratio="15" rot="SR0">GND</text>
-<text x="23.368" y="44.958" size="1.016" layer="21" font="vector" ratio="15" rot="SR0">VCC</text>
+<text x="23.368" y="44.958" size="1.016" layer="21" font="vector" ratio="15" rot="SR0">3.3V</text>
 <text x="23.368" y="47.498" size="1.016" layer="21" font="vector" ratio="15">SCLK</text>
 <text x="23.368" y="50.038" size="1.016" layer="21" font="vector" ratio="15">MOSI</text>
 <text x="23.368" y="52.578" size="1.016" layer="21" font="vector" ratio="15">MISO</text>
@@ -362,11 +446,23 @@
 <text x="30.861" y="55.118" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="center">PU</text>
 <text x="38.608" y="52.578" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">INT</text>
 <text x="38.608" y="55.118" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">TRIG</text>
+<text x="25.019" y="55.118" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">CS</text>
+<text x="26.543" y="52.578" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">MISO</text>
+<text x="26.543" y="50.038" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">MOSI</text>
+<text x="26.924" y="47.498" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">SCLK</text>
+<text x="26.543" y="44.958" size="1.016" layer="22" font="vector" ratio="15" rot="SMR0">3.3V</text>
+<text x="25.908" y="42.418" size="1.016" layer="22" font="vector" ratio="15" rot="SMR0">GND</text>
+<text x="35.687" y="42.418" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">GND</text>
+<text x="35.179" y="44.958" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">3.3V</text>
+<text x="35.687" y="47.498" size="1.016" layer="22" font="vector" ratio="15" distance="15" rot="MR0" align="bottom-right">SDA</text>
+<text x="35.687" y="50.038" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">SCL</text>
+<text x="36.068" y="52.578" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">INT</text>
+<text x="35.052" y="55.118" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">TRIG</text>
 <wire x1="61.976" y1="41.656" x2="41.656" y2="41.656" width="0.2032" layer="20"/>
 <wire x1="41.656" y1="41.656" x2="41.656" y2="61.976" width="0.2032" layer="20"/>
 <wire x1="41.656" y1="61.976" x2="61.976" y2="61.976" width="0.2032" layer="20"/>
 <wire x1="61.976" y1="61.976" x2="61.976" y2="41.656" width="0.2032" layer="20"/>
-<text x="59.436" y="44.958" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">VCC</text>
+<text x="59.436" y="44.958" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">3.3V</text>
 <text x="59.436" y="47.498" size="1.016" layer="21" font="vector" ratio="15" distance="15" align="bottom-right">SDA</text>
 <text x="59.436" y="50.038" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">SCL</text>
 <text x="59.436" y="42.418" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">GND</text>
@@ -385,7 +481,7 @@
 <wire x1="49.80305" y1="57.445275" x2="50.05705" y2="57.699275" width="0.254" layer="21"/>
 <wire x1="50.08245" y1="57.165875" x2="50.08245" y2="57.724675" width="0.254" layer="21"/>
 <text x="44.196" y="42.418" size="1.016" layer="21" font="vector" ratio="15" rot="SR0">GND</text>
-<text x="44.196" y="44.958" size="1.016" layer="21" font="vector" ratio="15" rot="SR0">VCC</text>
+<text x="44.196" y="44.958" size="1.016" layer="21" font="vector" ratio="15" rot="SR0">3.3V</text>
 <text x="44.196" y="47.498" size="1.016" layer="21" font="vector" ratio="15">SCLK</text>
 <text x="44.196" y="50.038" size="1.016" layer="21" font="vector" ratio="15">MOSI</text>
 <text x="44.196" y="52.578" size="1.016" layer="21" font="vector" ratio="15">MISO</text>
@@ -396,6 +492,18 @@
 <text x="51.689" y="55.118" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="center">PU</text>
 <text x="59.436" y="52.578" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">INT</text>
 <text x="59.436" y="55.118" size="1.016" layer="21" font="vector" ratio="15" align="bottom-right">TRIG</text>
+<text x="45.847" y="55.118" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">CS</text>
+<text x="47.371" y="52.578" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">MISO</text>
+<text x="47.371" y="50.038" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">MOSI</text>
+<text x="47.752" y="47.498" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">SCLK</text>
+<text x="47.371" y="44.958" size="1.016" layer="22" font="vector" ratio="15" rot="SMR0">3.3V</text>
+<text x="46.736" y="42.418" size="1.016" layer="22" font="vector" ratio="15" rot="SMR0">GND</text>
+<text x="56.515" y="42.418" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">GND</text>
+<text x="56.007" y="44.958" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">3.3V</text>
+<text x="56.515" y="47.498" size="1.016" layer="22" font="vector" ratio="15" distance="15" rot="MR0" align="bottom-right">SDA</text>
+<text x="56.515" y="50.038" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">SCL</text>
+<text x="56.896" y="52.578" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">INT</text>
+<text x="55.88" y="55.118" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">TRIG</text>
 </plain>
 <libraries>
 <library name="SparkX">
@@ -944,34 +1052,39 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default">
-<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+<designrules name="SparkFun-2-layer-TIGHT">
+<description language="en">&lt;b&gt;SparkFun 2 Layer Design Rule Checks - STANDARD/TIGHT/FAB-LIMIT&lt;/b&gt;
 &lt;p&gt;
-The default Design Rules have been set to cover
-a wide range of applications. Your particular design
-may have different requirements, so please make the
-necessary adjustments and save your customized
-design rules under a new name.
-</description>
+These rules have been curated by SparkFuns DFM commitee. After doing much research, communicating with our multiple fab houses, and getting quotes of various designs, we have compiled three DRU files. 
+&lt;p&gt;
+&lt;b&gt;STANDARD:&lt;/b&gt; This is more of a &quot;best case scenario&quot; set of limitations. If your design has the space, and/or you have the time to work within these parameters, please do. Larger trace width and clearance makes for easier visual inspection of the PCB while troubleshooting (useful in production and to the end user). It also allows for better ability to hack a trace (if you are crazy enough to scrape away the mask and solder to a trace). Another thing to keep in mind is that more metal is just more robust. 
+&lt;p&gt;
+&lt;b&gt;TIGHT:&lt;/b&gt; This is where cost comes into play. We have found that most fab houses begin to add extra charges when you go smaller than these specs. In some cases, going to less than 15 mil trace can increase the cost by 10%. (This is why we have set the min drill on this DRU to 15 mil) Same story for traces thinner than 7 mil. To avoid those extra charges, then stay within the rules of this DRU.
+&lt;p&gt;
+&lt;b&gt;FAB-LIMIT:&lt;/b&gt; These set of rules are at the very limit of most fab houses capabilities. You will pay more for these specs, and it should be used on designs that have a darned good reason to need 4 mil vias and 4 mil traces.
+&lt;p&gt;
+**NOTE Clearance, Distance, Sizes, and Restring are all set to different limits in each of these three DRU files. Please compare the files within the CAM job editor window of eagle to see all the numbers.
+&lt;p&gt;
+***NOTE, Please set your Net Classes to default (0mil for all settings), so that it won't effect the DRC when you run it with these settings.</description>
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
 <param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="8mil"/>
-<param name="mdWirePad" value="8mil"/>
-<param name="mdWireVia" value="8mil"/>
-<param name="mdPadPad" value="8mil"/>
-<param name="mdPadVia" value="8mil"/>
-<param name="mdViaVia" value="8mil"/>
-<param name="mdSmdPad" value="8mil"/>
-<param name="mdSmdVia" value="8mil"/>
-<param name="mdSmdSmd" value="8mil"/>
+<param name="mdWireWire" value="7mil"/>
+<param name="mdWirePad" value="7mil"/>
+<param name="mdWireVia" value="7mil"/>
+<param name="mdPadPad" value="7mil"/>
+<param name="mdPadVia" value="7mil"/>
+<param name="mdViaVia" value="7mil"/>
+<param name="mdSmdPad" value="7mil"/>
+<param name="mdSmdVia" value="7mil"/>
+<param name="mdSmdSmd" value="7mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="40mil"/>
-<param name="mdDrill" value="8mil"/>
+<param name="mdCopperDimension" value="7mil"/>
+<param name="mdDrill" value="7mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="10mil"/>
-<param name="msDrill" value="0.6mm"/>
+<param name="msWidth" value="7mil"/>
+<param name="msDrill" value="15mil"/>
 <param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
@@ -981,15 +1094,15 @@ design rules under a new name.
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="10mil"/>
+<param name="rlMinPadTop" value="7mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="10mil"/>
+<param name="rlMinPadInner" value="7mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="10mil"/>
+<param name="rlMinPadBottom" value="7mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="8mil"/>
+<param name="rlMinViaOuter" value="7mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="8mil"/>
+<param name="rlMinViaInner" value="7mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
 <param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
@@ -1006,7 +1119,7 @@ design rules under a new name.
 <param name="mlMaxStopFrame" value="4mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="0mil"/>
+<param name="mlViaStopLimit" value="25mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -1015,11 +1128,11 @@ design rules under a new name.
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
 <param name="checkGrid" value="0"/>
-<param name="checkAngle" value="0"/>
+<param name="checkAngle" value="1"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
 <param name="useDiameter" value="13"/>
-<param name="maxErrors" value="999999"/>
+<param name="maxErrors" value="50"/>
 </designrules>
 <autorouter>
 <pass name="Default">
@@ -1363,7 +1476,7 @@ design rules under a new name.
 <element name="SJ36" library="SparkFun-Jumpers" package="SMT-JUMPER_2_NC_TRACE_SILK" value="" x="51.816" y="59.436" rot="MR180"/>
 </elements>
 <signals>
-<signal name="GND">
+<signal name="GND9">
 <contactref element="U1" pad="13"/>
 <contactref element="J1" pad="1"/>
 <contactref element="J2" pad="1"/>
@@ -1541,9 +1654,6 @@ design rules under a new name.
 <wire x1="8.652" y1="9.406" x2="7.374" y2="9.406" width="0.1778" layer="1"/>
 <wire x1="7.374" y1="9.406" x2="6.77" y2="8.802" width="0.1778" layer="1"/>
 <wire x1="6.77" y1="5.08" x2="6.77" y2="8.802" width="0.1778" layer="1"/>
-<wire x1="6.77" y1="5.08" x2="5.08" y2="5.08" width="0.1778" layer="1"/>
-<wire x1="5.08" y1="5.08" x2="3.81" y2="3.81" width="0.1778" layer="1"/>
-<wire x1="3.81" y1="3.81" x2="1.27" y2="3.81" width="0.1778" layer="1"/>
 <wire x1="6.77" y1="5.08" x2="6.77" y2="4.23" width="0.1778" layer="1"/>
 <via x="6.35" y="3.81" extent="1-16" drill="0.381"/>
 <wire x1="7.239" y1="1.27" x2="7.239" y2="3.81" width="0.1778" layer="16"/>
@@ -1562,8 +1672,9 @@ design rules under a new name.
 <wire x1="11.049" y1="1.27" x2="11.049" y2="2.54" width="0.1778" layer="16"/>
 <wire x1="11.049" y1="2.54" x2="11.43" y2="2.921" width="0.1778" layer="16"/>
 <wire x1="11.43" y1="2.921" x2="11.43" y2="3.81" width="0.1778" layer="16"/>
+<wire x1="1.27" y1="3.81" x2="6.35" y2="3.81" width="0.1778" layer="1"/>
 </signal>
-<signal name="GND1">
+<signal name="GND10">
 <contactref element="U2" pad="13"/>
 <contactref element="J3" pad="1"/>
 <contactref element="J4" pad="1"/>
@@ -1741,9 +1852,6 @@ design rules under a new name.
 <wire x1="29.48" y1="9.406" x2="28.202" y2="9.406" width="0.1778" layer="1"/>
 <wire x1="28.202" y1="9.406" x2="27.598" y2="8.802" width="0.1778" layer="1"/>
 <wire x1="27.598" y1="5.08" x2="27.598" y2="8.802" width="0.1778" layer="1"/>
-<wire x1="27.598" y1="5.08" x2="25.908" y2="5.08" width="0.1778" layer="1"/>
-<wire x1="25.908" y1="5.08" x2="24.638" y2="3.81" width="0.1778" layer="1"/>
-<wire x1="24.638" y1="3.81" x2="22.098" y2="3.81" width="0.1778" layer="1"/>
 <wire x1="27.598" y1="5.08" x2="27.598" y2="4.23" width="0.1778" layer="1"/>
 <via x="27.178" y="3.81" extent="1-16" drill="0.381"/>
 <wire x1="28.067" y1="1.27" x2="28.067" y2="3.81" width="0.1778" layer="16"/>
@@ -1762,8 +1870,9 @@ design rules under a new name.
 <wire x1="31.877" y1="1.27" x2="31.877" y2="2.54" width="0.1778" layer="16"/>
 <wire x1="31.877" y1="2.54" x2="32.258" y2="2.921" width="0.1778" layer="16"/>
 <wire x1="32.258" y1="2.921" x2="32.258" y2="3.81" width="0.1778" layer="16"/>
+<wire x1="22.098" y1="3.81" x2="27.178" y2="3.81" width="0.1778" layer="1"/>
 </signal>
-<signal name="GND2">
+<signal name="GND11">
 <contactref element="U3" pad="13"/>
 <contactref element="J5" pad="1"/>
 <contactref element="J6" pad="1"/>
@@ -1941,9 +2050,6 @@ design rules under a new name.
 <wire x1="50.308" y1="9.406" x2="49.03" y2="9.406" width="0.1778" layer="1"/>
 <wire x1="49.03" y1="9.406" x2="48.426" y2="8.802" width="0.1778" layer="1"/>
 <wire x1="48.426" y1="5.08" x2="48.426" y2="8.802" width="0.1778" layer="1"/>
-<wire x1="48.426" y1="5.08" x2="46.736" y2="5.08" width="0.1778" layer="1"/>
-<wire x1="46.736" y1="5.08" x2="45.466" y2="3.81" width="0.1778" layer="1"/>
-<wire x1="45.466" y1="3.81" x2="42.926" y2="3.81" width="0.1778" layer="1"/>
 <wire x1="48.426" y1="5.08" x2="48.426" y2="4.23" width="0.1778" layer="1"/>
 <via x="48.006" y="3.81" extent="1-16" drill="0.381"/>
 <wire x1="48.895" y1="1.27" x2="48.895" y2="3.81" width="0.1778" layer="16"/>
@@ -1962,8 +2068,9 @@ design rules under a new name.
 <wire x1="52.705" y1="1.27" x2="52.705" y2="2.54" width="0.1778" layer="16"/>
 <wire x1="52.705" y1="2.54" x2="53.086" y2="2.921" width="0.1778" layer="16"/>
 <wire x1="53.086" y1="2.921" x2="53.086" y2="3.81" width="0.1778" layer="16"/>
+<wire x1="42.926" y1="3.81" x2="48.006" y2="3.81" width="0.1778" layer="1"/>
 </signal>
-<signal name="GND3">
+<signal name="GND12">
 <contactref element="U4" pad="13"/>
 <contactref element="J7" pad="1"/>
 <contactref element="J8" pad="1"/>
@@ -2141,9 +2248,6 @@ design rules under a new name.
 <wire x1="8.652" y1="30.234" x2="7.374" y2="30.234" width="0.1778" layer="1"/>
 <wire x1="7.374" y1="30.234" x2="6.77" y2="29.63" width="0.1778" layer="1"/>
 <wire x1="6.77" y1="25.908" x2="6.77" y2="29.63" width="0.1778" layer="1"/>
-<wire x1="6.77" y1="25.908" x2="5.08" y2="25.908" width="0.1778" layer="1"/>
-<wire x1="5.08" y1="25.908" x2="3.81" y2="24.638" width="0.1778" layer="1"/>
-<wire x1="3.81" y1="24.638" x2="1.27" y2="24.638" width="0.1778" layer="1"/>
 <wire x1="6.77" y1="25.908" x2="6.77" y2="25.058" width="0.1778" layer="1"/>
 <via x="6.35" y="24.638" extent="1-16" drill="0.381"/>
 <wire x1="7.239" y1="22.098" x2="7.239" y2="24.638" width="0.1778" layer="16"/>
@@ -2162,8 +2266,9 @@ design rules under a new name.
 <wire x1="11.049" y1="22.098" x2="11.049" y2="23.368" width="0.1778" layer="16"/>
 <wire x1="11.049" y1="23.368" x2="11.43" y2="23.749" width="0.1778" layer="16"/>
 <wire x1="11.43" y1="23.749" x2="11.43" y2="24.638" width="0.1778" layer="16"/>
+<wire x1="1.27" y1="24.638" x2="6.35" y2="24.638" width="0.1778" layer="1"/>
 </signal>
-<signal name="GND4">
+<signal name="GND13">
 <contactref element="U5" pad="13"/>
 <contactref element="J9" pad="1"/>
 <contactref element="J10" pad="1"/>
@@ -2341,9 +2446,6 @@ design rules under a new name.
 <wire x1="29.48" y1="30.234" x2="28.202" y2="30.234" width="0.1778" layer="1"/>
 <wire x1="28.202" y1="30.234" x2="27.598" y2="29.63" width="0.1778" layer="1"/>
 <wire x1="27.598" y1="25.908" x2="27.598" y2="29.63" width="0.1778" layer="1"/>
-<wire x1="27.598" y1="25.908" x2="25.908" y2="25.908" width="0.1778" layer="1"/>
-<wire x1="25.908" y1="25.908" x2="24.638" y2="24.638" width="0.1778" layer="1"/>
-<wire x1="24.638" y1="24.638" x2="22.098" y2="24.638" width="0.1778" layer="1"/>
 <wire x1="27.598" y1="25.908" x2="27.598" y2="25.058" width="0.1778" layer="1"/>
 <via x="27.178" y="24.638" extent="1-16" drill="0.381"/>
 <wire x1="28.067" y1="22.098" x2="28.067" y2="24.638" width="0.1778" layer="16"/>
@@ -2362,8 +2464,9 @@ design rules under a new name.
 <wire x1="31.877" y1="22.098" x2="31.877" y2="23.368" width="0.1778" layer="16"/>
 <wire x1="31.877" y1="23.368" x2="32.258" y2="23.749" width="0.1778" layer="16"/>
 <wire x1="32.258" y1="23.749" x2="32.258" y2="24.638" width="0.1778" layer="16"/>
+<wire x1="22.098" y1="24.638" x2="27.178" y2="24.638" width="0.1778" layer="1"/>
 </signal>
-<signal name="GND5">
+<signal name="GND14">
 <contactref element="U6" pad="13"/>
 <contactref element="J11" pad="1"/>
 <contactref element="J12" pad="1"/>
@@ -2541,9 +2644,6 @@ design rules under a new name.
 <wire x1="50.308" y1="30.234" x2="49.03" y2="30.234" width="0.1778" layer="1"/>
 <wire x1="49.03" y1="30.234" x2="48.426" y2="29.63" width="0.1778" layer="1"/>
 <wire x1="48.426" y1="25.908" x2="48.426" y2="29.63" width="0.1778" layer="1"/>
-<wire x1="48.426" y1="25.908" x2="46.736" y2="25.908" width="0.1778" layer="1"/>
-<wire x1="46.736" y1="25.908" x2="45.466" y2="24.638" width="0.1778" layer="1"/>
-<wire x1="45.466" y1="24.638" x2="42.926" y2="24.638" width="0.1778" layer="1"/>
 <wire x1="48.426" y1="25.908" x2="48.426" y2="25.058" width="0.1778" layer="1"/>
 <via x="48.006" y="24.638" extent="1-16" drill="0.381"/>
 <wire x1="48.895" y1="22.098" x2="48.895" y2="24.638" width="0.1778" layer="16"/>
@@ -2562,8 +2662,9 @@ design rules under a new name.
 <wire x1="52.705" y1="22.098" x2="52.705" y2="23.368" width="0.1778" layer="16"/>
 <wire x1="52.705" y1="23.368" x2="53.086" y2="23.749" width="0.1778" layer="16"/>
 <wire x1="53.086" y1="23.749" x2="53.086" y2="24.638" width="0.1778" layer="16"/>
+<wire x1="42.926" y1="24.638" x2="48.006" y2="24.638" width="0.1778" layer="1"/>
 </signal>
-<signal name="GND6">
+<signal name="GND15">
 <contactref element="U7" pad="13"/>
 <contactref element="J13" pad="1"/>
 <contactref element="J14" pad="1"/>
@@ -2741,9 +2842,6 @@ design rules under a new name.
 <wire x1="8.652" y1="51.062" x2="7.374" y2="51.062" width="0.1778" layer="1"/>
 <wire x1="7.374" y1="51.062" x2="6.77" y2="50.458" width="0.1778" layer="1"/>
 <wire x1="6.77" y1="46.736" x2="6.77" y2="50.458" width="0.1778" layer="1"/>
-<wire x1="6.77" y1="46.736" x2="5.08" y2="46.736" width="0.1778" layer="1"/>
-<wire x1="5.08" y1="46.736" x2="3.81" y2="45.466" width="0.1778" layer="1"/>
-<wire x1="3.81" y1="45.466" x2="1.27" y2="45.466" width="0.1778" layer="1"/>
 <wire x1="6.77" y1="46.736" x2="6.77" y2="45.886" width="0.1778" layer="1"/>
 <via x="6.35" y="45.466" extent="1-16" drill="0.381"/>
 <wire x1="7.239" y1="42.926" x2="7.239" y2="45.466" width="0.1778" layer="16"/>
@@ -2762,8 +2860,9 @@ design rules under a new name.
 <wire x1="11.049" y1="42.926" x2="11.049" y2="44.196" width="0.1778" layer="16"/>
 <wire x1="11.049" y1="44.196" x2="11.43" y2="44.577" width="0.1778" layer="16"/>
 <wire x1="11.43" y1="44.577" x2="11.43" y2="45.466" width="0.1778" layer="16"/>
+<wire x1="1.27" y1="45.466" x2="6.35" y2="45.466" width="0.1778" layer="1"/>
 </signal>
-<signal name="GND7">
+<signal name="GND16">
 <contactref element="U8" pad="13"/>
 <contactref element="J15" pad="1"/>
 <contactref element="J16" pad="1"/>
@@ -2941,9 +3040,6 @@ design rules under a new name.
 <wire x1="29.48" y1="51.062" x2="28.202" y2="51.062" width="0.1778" layer="1"/>
 <wire x1="28.202" y1="51.062" x2="27.598" y2="50.458" width="0.1778" layer="1"/>
 <wire x1="27.598" y1="46.736" x2="27.598" y2="50.458" width="0.1778" layer="1"/>
-<wire x1="27.598" y1="46.736" x2="25.908" y2="46.736" width="0.1778" layer="1"/>
-<wire x1="25.908" y1="46.736" x2="24.638" y2="45.466" width="0.1778" layer="1"/>
-<wire x1="24.638" y1="45.466" x2="22.098" y2="45.466" width="0.1778" layer="1"/>
 <wire x1="27.598" y1="46.736" x2="27.598" y2="45.886" width="0.1778" layer="1"/>
 <via x="27.178" y="45.466" extent="1-16" drill="0.381"/>
 <wire x1="28.067" y1="42.926" x2="28.067" y2="45.466" width="0.1778" layer="16"/>
@@ -2962,8 +3058,9 @@ design rules under a new name.
 <wire x1="31.877" y1="42.926" x2="31.877" y2="44.196" width="0.1778" layer="16"/>
 <wire x1="31.877" y1="44.196" x2="32.258" y2="44.577" width="0.1778" layer="16"/>
 <wire x1="32.258" y1="44.577" x2="32.258" y2="45.466" width="0.1778" layer="16"/>
+<wire x1="22.098" y1="45.466" x2="27.178" y2="45.466" width="0.1778" layer="1"/>
 </signal>
-<signal name="GND8">
+<signal name="GND17">
 <contactref element="U9" pad="13"/>
 <contactref element="J17" pad="1"/>
 <contactref element="J18" pad="1"/>
@@ -3141,9 +3238,6 @@ design rules under a new name.
 <wire x1="50.308" y1="51.062" x2="49.03" y2="51.062" width="0.1778" layer="1"/>
 <wire x1="49.03" y1="51.062" x2="48.426" y2="50.458" width="0.1778" layer="1"/>
 <wire x1="48.426" y1="46.736" x2="48.426" y2="50.458" width="0.1778" layer="1"/>
-<wire x1="48.426" y1="46.736" x2="46.736" y2="46.736" width="0.1778" layer="1"/>
-<wire x1="46.736" y1="46.736" x2="45.466" y2="45.466" width="0.1778" layer="1"/>
-<wire x1="45.466" y1="45.466" x2="42.926" y2="45.466" width="0.1778" layer="1"/>
 <wire x1="48.426" y1="46.736" x2="48.426" y2="45.886" width="0.1778" layer="1"/>
 <via x="48.006" y="45.466" extent="1-16" drill="0.381"/>
 <wire x1="48.895" y1="42.926" x2="48.895" y2="45.466" width="0.1778" layer="16"/>
@@ -3162,6 +3256,7 @@ design rules under a new name.
 <wire x1="52.705" y1="42.926" x2="52.705" y2="44.196" width="0.1778" layer="16"/>
 <wire x1="52.705" y1="44.196" x2="53.086" y2="44.577" width="0.1778" layer="16"/>
 <wire x1="53.086" y1="44.577" x2="53.086" y2="45.466" width="0.1778" layer="16"/>
+<wire x1="42.926" y1="45.466" x2="48.006" y2="45.466" width="0.1778" layer="1"/>
 </signal>
 </signals>
 </board>

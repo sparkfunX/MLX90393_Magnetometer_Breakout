@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
+<<<<<<< HEAD
 <eagle version="7.6.0">
+=======
+<eagle version="7.5.0">
+>>>>>>> FETCH_HEAD
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -247,34 +251,18 @@ Standard 8.5x11 US Letter frame</description>
 <library name="SparkX">
 <packages>
 <package name="QFN-16">
-<smd name="12" x="0.754" y="-1.506" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R270" stop="no" cream="no"/>
-<smd name="11" x="0.254" y="-1.506" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R270" stop="no" cream="no"/>
-<smd name="10" x="-0.246" y="-1.506" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R270" stop="no" cream="no"/>
-<smd name="9" x="-0.746" y="-1.506" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R270" stop="no" cream="no"/>
-<smd name="5" x="-1.508" y="0.746" dx="0.85" dy="0.3" layer="1" roundness="75" stop="no" cream="no"/>
-<smd name="6" x="-1.508" y="0.246" dx="0.85" dy="0.3" layer="1" roundness="75" stop="no" cream="no"/>
-<smd name="7" x="-1.508" y="-0.254" dx="0.85" dy="0.3" layer="1" roundness="75" stop="no" cream="no"/>
-<smd name="8" x="-1.508" y="-0.754" dx="0.85" dy="0.3" layer="1" roundness="75" stop="no" cream="no"/>
-<smd name="4" x="-0.746" y="1.498" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R90" stop="no" cream="no"/>
-<smd name="3" x="-0.246" y="1.498" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R90" stop="no" cream="no"/>
-<smd name="2" x="0.254" y="1.498" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R90" stop="no" cream="no"/>
-<smd name="1" x="0.754" y="1.498" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R90" stop="no" cream="no"/>
-<smd name="13" x="1.496" y="-0.764" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R180" stop="no" cream="no"/>
-<smd name="14" x="1.496" y="-0.264" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R180" stop="no" cream="no"/>
-<smd name="15" x="1.496" y="0.236" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R180" stop="no" cream="no"/>
-<smd name="16" x="1.496" y="0.736" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R180" stop="no" cream="no"/>
+<circle x="0.9154" y="0.9126" radius="0.05" width="0.127" layer="51"/>
+<circle x="1.4234" y="1.9921" radius="0.1905" width="0" layer="21"/>
+<circle x="0.208" y="0.5604" radius="0.127" width="0.0508" layer="51"/>
+<circle x="0.208" y="0.5604" radius="0.0254" width="0.0508" layer="51"/>
 <wire x1="1.0649" y1="1.6891" x2="1.7554" y2="1.6891" width="0.127" layer="21"/>
 <wire x1="1.7554" y1="1.6891" x2="1.7554" y2="1.0621" width="0.127" layer="21"/>
 <wire x1="-1.7526" y1="1.6891" x2="-1.7526" y2="1.0621" width="0.127" layer="21"/>
 <wire x1="-1.0621" y1="1.6891" x2="-1.7526" y2="1.6891" width="0.127" layer="21"/>
-<circle x="0.9154" y="0.9126" radius="0.05" width="0.127" layer="51"/>
 <wire x1="-1.4986" y1="1.4986" x2="1.5014" y2="1.4986" width="0.127" layer="51"/>
 <wire x1="1.5014" y1="-1.5014" x2="1.5014" y2="1.4986" width="0.127" layer="51"/>
 <wire x1="1.5014" y1="-1.5014" x2="-1.4986" y2="-1.5014" width="0.127" layer="51"/>
 <wire x1="-1.4986" y1="1.4986" x2="-1.4986" y2="-1.5014" width="0.127" layer="51"/>
-<text x="0.0714" y="2.1136" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0.0214" y="-2.0464" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<circle x="1.4234" y="1.9921" radius="0.1905" width="0" layer="21"/>
 <wire x1="-1.7526" y1="-1.6919" x2="-1.7526" y2="-1.0649" width="0.127" layer="21"/>
 <wire x1="-1.0621" y1="-1.6919" x2="-1.7526" y2="-1.6919" width="0.127" layer="21"/>
 <wire x1="1.7554" y1="-1.6919" x2="1.7554" y2="-1.0649" width="0.127" layer="21"/>
@@ -285,14 +273,30 @@ Standard 8.5x11 US Letter frame</description>
 <wire x1="0.2254" y1="-0.0968" x2="0.2254" y2="0.1572" width="0.0508" layer="51"/>
 <wire x1="0.2254" y1="0.1572" x2="0.0984" y2="0.0302" width="0.0508" layer="51"/>
 <wire x1="0.2254" y1="0.1572" x2="0.3524" y2="0.0302" width="0.0508" layer="51"/>
-<circle x="0.208" y="0.5604" radius="0.127" width="0.0508" layer="51"/>
-<circle x="0.208" y="0.5604" radius="0.0254" width="0.0508" layer="51"/>
+<smd name="1" x="0.754" y="1.498" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R90" stop="no"/>
+<smd name="2" x="0.254" y="1.498" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R90" stop="no"/>
+<smd name="3" x="-0.246" y="1.498" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R90" stop="no"/>
+<smd name="4" x="-0.746" y="1.498" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R90" stop="no"/>
+<smd name="5" x="-1.508" y="0.746" dx="0.85" dy="0.3" layer="1" roundness="75" stop="no"/>
+<smd name="6" x="-1.508" y="0.246" dx="0.85" dy="0.3" layer="1" roundness="75" stop="no"/>
+<smd name="7" x="-1.508" y="-0.254" dx="0.85" dy="0.3" layer="1" roundness="75" stop="no"/>
+<smd name="8" x="-1.508" y="-0.754" dx="0.85" dy="0.3" layer="1" roundness="75" stop="no"/>
+<smd name="9" x="-0.746" y="-1.506" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R270" stop="no"/>
+<smd name="10" x="-0.246" y="-1.506" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R270" stop="no"/>
+<smd name="11" x="0.254" y="-1.506" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R270" stop="no"/>
+<smd name="12" x="0.754" y="-1.506" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R270" stop="no"/>
+<smd name="13" x="1.496" y="-0.764" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R180" stop="no"/>
+<smd name="14" x="1.496" y="-0.264" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R180" stop="no"/>
+<smd name="15" x="1.496" y="0.236" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R180" stop="no"/>
+<smd name="16" x="1.496" y="0.736" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R180" stop="no"/>
+<text x="0.0714" y="2.1136" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="0.0214" y="-2.0464" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 <text x="-0.3" y="-0.1174" size="0.3048" layer="51" ratio="15">X</text>
 <text x="-0.3" y="-0.6334" size="0.3048" layer="51" ratio="15">Y</text>
 <text x="-0.3" y="0.4" size="0.3048" layer="51" ratio="15">Z</text>
 </package>
 <package name="SPARKX-LARGE">
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-5.715" y="1.5819125"/>
 <vertex x="-5.715" y="-1.5819125"/>
 <vertex x="3.05866875" y="-1.5819125"/>
@@ -314,7 +318,7 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="5.715" y="1.5819125"/>
 <vertex x="3.1615375" y="1.5819125"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="5.715" y="-0.15405"/>
 <vertex x="4.756278125" y="-0.15405"/>
 <vertex x="5.1743625" y="-0.766953125"/>
@@ -331,7 +335,7 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="3.1615375" y="-1.5819125"/>
 <vertex x="5.715" y="-1.5819125"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-4.3514" y="0.786384375"/>
 <vertex x="-4.464559375" y="0.778003125"/>
 <vertex x="-4.567428125" y="0.7532375"/>
@@ -355,12 +359,12 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="-4.041646875" y="0.736090625"/>
 <vertex x="-4.189603125" y="0.773684375"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-3.931284375" y="0.37579375"/>
 <vertex x="-4.0250125" y="0.37579375"/>
 <vertex x="-3.957065625" y="0.338328125"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-4.546728125" y="0.37579375"/>
 <vertex x="-4.88035625" y="0.37579375"/>
 <vertex x="-4.88518125" y="0.3246125"/>
@@ -411,7 +415,7 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="-4.551425" y="0.3509"/>
 <vertex x="-4.551425" y="0.355471875"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="2.328925" y="0.37579375"/>
 <vertex x="1.934209375" y="0.37579375"/>
 <vertex x="1.67449375" y="0.0960125"/>
@@ -425,19 +429,19 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="2.73176875" y="-0.766953125"/>
 <vertex x="2.079115625" y="0.11544375"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="2.328925" y="0.37579375"/>
 <vertex x="2.70319375" y="0.765809375"/>
 <vertex x="2.2962875" y="0.765809375"/>
 <vertex x="1.934209375" y="0.37579375"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="1.67449375" y="0.37579375"/>
 <vertex x="1.67449375" y="0.765809375"/>
 <vertex x="1.337309375" y="0.765809375"/>
 <vertex x="1.337309375" y="0.37579375"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="1.0215875" y="0.37579375"/>
 <vertex x="0.644396875" y="0.37579375"/>
 <vertex x="0.6731" y="0.338328125"/>
@@ -464,7 +468,7 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="1.032128125" y="0.2594625"/>
 <vertex x="1.02273125" y="0.372109375"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="1.0215875" y="0.37579375"/>
 <vertex x="0.994284375" y="0.47193125"/>
 <vertex x="0.946784375" y="0.558546875"/>
@@ -482,7 +486,7 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="0.62065" y="0.406909375"/>
 <vertex x="0.644396875" y="0.37579375"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-0.9699" y="0.37579375"/>
 <vertex x="-1.622553125" y="0.37579375"/>
 <vertex x="-2.108834375" y="-0.766953125"/>
@@ -491,13 +495,13 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="-0.836675" y="-0.766953125"/>
 <vertex x="-0.4834875" y="-0.766953125"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-0.9699" y="0.37579375"/>
 <vertex x="-1.1407125" y="0.777240625"/>
 <vertex x="-1.451609375" y="0.777240625"/>
 <vertex x="-1.622553125" y="0.37579375"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-2.244215625" y="0.37579375"/>
 <vertex x="-2.62140625" y="0.37579375"/>
 <vertex x="-2.58648125" y="0.329690625"/>
@@ -526,7 +530,7 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="-2.2265625" y="0.2366"/>
 <vertex x="-2.236725" y="0.349759375"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-2.244215625" y="0.37579375"/>
 <vertex x="-2.26656875" y="0.452628125"/>
 <vertex x="-2.31584375" y="0.543434375"/>
@@ -546,7 +550,7 @@ Standard 8.5x11 US Letter frame</description>
 </polygon>
 </package>
 <package name="SPARKX-XLARGE">
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="10.396346875" y="3.749928125"/>
 <vertex x="10.396346875" y="0.850265625"/>
 <vertex x="10.534778125" y="0.63665"/>
@@ -562,7 +566,7 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="13.547725" y="-3.749928125"/>
 <vertex x="13.547725" y="3.749928125"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-4.00799375" y="-3.749928125"/>
 <vertex x="-4.00799375" y="-3.053715625"/>
 <vertex x="-12.85125625" y="-3.053715625"/>
@@ -572,7 +576,7 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="-13.547725" y="3.749928125"/>
 <vertex x="-13.547725" y="-3.749928125"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-4.00799375" y="-3.749928125"/>
 <vertex x="7.49465" y="-3.749928125"/>
 <vertex x="10.396346875" y="-3.749928125"/>
@@ -591,7 +595,7 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="7.49465" y="-3.053715625"/>
 <vertex x="-4.00799375" y="-3.053715625"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-6.55205625" y="1.82753125"/>
 <vertex x="-6.55205625" y="1.10134375"/>
 <vertex x="-6.491096875" y="1.10134375"/>
@@ -626,7 +630,7 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="-6.115178125" y="1.803909375"/>
 <vertex x="-6.426071875" y="1.82753125"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-6.55205625" y="1.82753125"/>
 <vertex x="-7.910703125" y="1.82753125"/>
 <vertex x="-7.910703125" y="-1.805940625"/>
@@ -638,7 +642,7 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="-7.108825" y="1.10134375"/>
 <vertex x="-6.55205625" y="1.10134375"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-10.0702125" y="1.8709625"/>
 <vertex x="-10.338434375" y="1.850896875"/>
 <vertex x="-10.582275" y="1.792225"/>
@@ -705,7 +709,7 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="-9.335896875" y="1.751584375"/>
 <vertex x="-9.686925" y="1.8407375"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="0.582675" y="-0.66801875"/>
 <vertex x="0.582675" y="0.03936875"/>
 <vertex x="0.11074375" y="0.03936875"/>
@@ -717,7 +721,7 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="0.11074375" y="-1.830325"/>
 <vertex x="0.11074375" y="-0.66801875"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="0.582675" y="-0.66801875"/>
 <vertex x="0.73939375" y="-0.66801875"/>
 <vertex x="1.5168875" y="-1.830325"/>
@@ -750,7 +754,7 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="0.92075" y="0.03936875"/>
 <vertex x="0.582675" y="0.03936875"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="3.066796875" y="1.803146875"/>
 <vertex x="3.066796875" y="-1.830325"/>
 <vertex x="3.866134375" y="-1.830325"/>
@@ -764,7 +768,7 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="3.866134375" y="0.215390625"/>
 <vertex x="3.866134375" y="1.803146875"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-3.544315625" y="1.830325"/>
 <vertex x="-5.102353125" y="-1.830325"/>
 <vertex x="-4.286759375" y="-1.830325"/>
@@ -775,7 +779,7 @@ Standard 8.5x11 US Letter frame</description>
 </polygon>
 </package>
 <package name="SPARKX-MEDIUM">
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-4.572" y="1.265528125"/>
 <vertex x="-4.572" y="-1.265528125"/>
 <vertex x="2.446934375" y="-1.265528125"/>
@@ -797,7 +801,7 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="4.572" y="1.265528125"/>
 <vertex x="2.52923125" y="1.265528125"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="4.572" y="-0.123240625"/>
 <vertex x="3.805021875" y="-0.123240625"/>
 <vertex x="4.1394875" y="-0.6135625"/>
@@ -814,7 +818,7 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="2.52923125" y="-1.265528125"/>
 <vertex x="4.572" y="-1.265528125"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-3.481121875" y="0.62910625"/>
 <vertex x="-3.571646875" y="0.622403125"/>
 <vertex x="-3.65394375" y="0.602590625"/>
@@ -838,12 +842,12 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="-3.23331875" y="0.588875"/>
 <vertex x="-3.35168125" y="0.618946875"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-3.145028125" y="0.300634375"/>
 <vertex x="-3.220009375" y="0.300634375"/>
 <vertex x="-3.165653125" y="0.2706625"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-3.63738125" y="0.300634375"/>
 <vertex x="-3.904284375" y="0.300634375"/>
 <vertex x="-3.908146875" y="0.259690625"/>
@@ -894,7 +898,7 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="-3.641140625" y="0.280721875"/>
 <vertex x="-3.641140625" y="0.284378125"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="1.863140625" y="0.300634375"/>
 <vertex x="1.54736875" y="0.300634375"/>
 <vertex x="1.339596875" y="0.076809375"/>
@@ -908,19 +912,19 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="2.185415625" y="-0.6135625"/>
 <vertex x="1.66329375" y="0.092353125"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="1.863140625" y="0.300634375"/>
 <vertex x="2.16255625" y="0.612646875"/>
 <vertex x="1.837028125" y="0.612646875"/>
 <vertex x="1.54736875" y="0.300634375"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="1.339596875" y="0.300634375"/>
 <vertex x="1.339596875" y="0.612646875"/>
 <vertex x="1.069846875" y="0.612646875"/>
 <vertex x="1.069846875" y="0.300634375"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="0.817271875" y="0.300634375"/>
 <vertex x="0.51551875" y="0.300634375"/>
 <vertex x="0.53848125" y="0.2706625"/>
@@ -947,7 +951,7 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="0.825703125" y="0.20756875"/>
 <vertex x="0.818184375" y="0.2976875"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="0.817271875" y="0.300634375"/>
 <vertex x="0.795425" y="0.377546875"/>
 <vertex x="0.757428125" y="0.4468375"/>
@@ -965,7 +969,7 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="0.49651875" y="0.325525"/>
 <vertex x="0.51551875" y="0.300634375"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-0.77591875" y="0.300634375"/>
 <vertex x="-1.298040625" y="0.300634375"/>
 <vertex x="-1.68706875" y="-0.6135625"/>
@@ -974,13 +978,13 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="-0.669340625" y="-0.6135625"/>
 <vertex x="-0.386790625" y="-0.6135625"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-0.77591875" y="0.300634375"/>
 <vertex x="-0.912571875" y="0.621790625"/>
 <vertex x="-1.1612875" y="0.621790625"/>
 <vertex x="-1.298040625" y="0.300634375"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-1.795375" y="0.300634375"/>
 <vertex x="-2.097125" y="0.300634375"/>
 <vertex x="-2.069184375" y="0.263753125"/>
@@ -1009,7 +1013,7 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="-1.78125" y="0.18928125"/>
 <vertex x="-1.789378125" y="0.27980625"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-1.795375" y="0.300634375"/>
 <vertex x="-1.81325625" y="0.362103125"/>
 <vertex x="-1.852675" y="0.434746875"/>
@@ -1029,7 +1033,7 @@ Standard 8.5x11 US Letter frame</description>
 </polygon>
 </package>
 <package name="SPARKX-SMALL">
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-3.429" y="0.949146875"/>
 <vertex x="-3.429" y="-0.949146875"/>
 <vertex x="1.8352" y="-0.949146875"/>
@@ -1051,7 +1055,7 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="3.429" y="0.949146875"/>
 <vertex x="1.896921875" y="0.949146875"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="3.429" y="-0.09243125"/>
 <vertex x="2.853765625" y="-0.09243125"/>
 <vertex x="3.104615625" y="-0.460171875"/>
@@ -1068,7 +1072,7 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="1.896921875" y="-0.949146875"/>
 <vertex x="3.429" y="-0.949146875"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-2.610840625" y="0.47183125"/>
 <vertex x="-2.678734375" y="0.4668"/>
 <vertex x="-2.74045625" y="0.45194375"/>
@@ -1092,12 +1096,12 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="-2.4249875" y="0.44165625"/>
 <vertex x="-2.5137625" y="0.464209375"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-2.358771875" y="0.225475"/>
 <vertex x="-2.41500625" y="0.225475"/>
 <vertex x="-2.374240625" y="0.202996875"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-2.7280375" y="0.225475"/>
 <vertex x="-2.9282125" y="0.225475"/>
 <vertex x="-2.931109375" y="0.19476875"/>
@@ -1148,7 +1152,7 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="-2.73085625" y="0.210540625"/>
 <vertex x="-2.73085625" y="0.213284375"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="1.39735625" y="0.225475"/>
 <vertex x="1.160525" y="0.225475"/>
 <vertex x="1.004696875" y="0.05760625"/>
@@ -1162,19 +1166,19 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="1.6390625" y="-0.460171875"/>
 <vertex x="1.24746875" y="0.069265625"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="1.39735625" y="0.225475"/>
 <vertex x="1.621915625" y="0.4594875"/>
 <vertex x="1.377771875" y="0.4594875"/>
 <vertex x="1.160525" y="0.225475"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="1.004696875" y="0.225475"/>
 <vertex x="1.004696875" y="0.4594875"/>
 <vertex x="0.8023875" y="0.4594875"/>
 <vertex x="0.8023875" y="0.225475"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="0.612953125" y="0.225475"/>
 <vertex x="0.3866375" y="0.225475"/>
 <vertex x="0.403859375" y="0.202996875"/>
@@ -1201,7 +1205,7 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="0.619278125" y="0.155678125"/>
 <vertex x="0.6136375" y="0.223265625"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="0.612953125" y="0.225475"/>
 <vertex x="0.59656875" y="0.283159375"/>
 <vertex x="0.568071875" y="0.335128125"/>
@@ -1219,7 +1223,7 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="0.372390625" y="0.24414375"/>
 <vertex x="0.3866375" y="0.225475"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-0.581940625" y="0.225475"/>
 <vertex x="-0.97353125" y="0.225475"/>
 <vertex x="-1.2653" y="-0.460171875"/>
@@ -1228,13 +1232,13 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="-0.50200625" y="-0.460171875"/>
 <vertex x="-0.29009375" y="-0.460171875"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-0.581940625" y="0.225475"/>
 <vertex x="-0.684428125" y="0.46634375"/>
 <vertex x="-0.870965625" y="0.46634375"/>
 <vertex x="-0.97353125" y="0.225475"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-1.34653125" y="0.225475"/>
 <vertex x="-1.57284375" y="0.225475"/>
 <vertex x="-1.551890625" y="0.197815625"/>
@@ -1263,7 +1267,7 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="-1.3359375" y="0.141959375"/>
 <vertex x="-1.342034375" y="0.20985625"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-1.34653125" y="0.225475"/>
 <vertex x="-1.359940625" y="0.271578125"/>
 <vertex x="-1.38950625" y="0.326059375"/>
@@ -1283,7 +1287,7 @@ Standard 8.5x11 US Letter frame</description>
 </polygon>
 </package>
 <package name="SPARKX-TINY">
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-2.286" y="0.632765625"/>
 <vertex x="-2.286" y="-0.632765625"/>
 <vertex x="1.22346875" y="-0.632765625"/>
@@ -1303,13 +1307,11 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="1.902509375" y="-0.061621875"/>
 <vertex x="2.286" y="-0.061621875"/>
 <vertex x="2.286" y="0.632765625"/>
-<vertex x="1.264615625" y="0.632765625"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="2.286" y="-0.061621875"/>
 <vertex x="1.902509375" y="-0.061621875"/>
 <vertex x="2.06974375" y="-0.30678125"/>
-<vertex x="2.06883125" y="-0.30678125"/>
 <vertex x="1.911096875" y="-0.30678125"/>
 <vertex x="1.773478125" y="-0.09646875"/>
 <vertex x="1.634946875" y="-0.30678125"/>
@@ -1319,10 +1321,9 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="1.264615625" y="-0.515265625"/>
 <vertex x="1.22346875" y="-0.515265625"/>
 <vertex x="1.22346875" y="-0.632765625"/>
-<vertex x="1.264615625" y="-0.632765625"/>
 <vertex x="2.286" y="-0.632765625"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-1.740559375" y="0.314553125"/>
 <vertex x="-1.785821875" y="0.3112"/>
 <vertex x="-1.826971875" y="0.30129375"/>
@@ -1346,12 +1347,12 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="-1.616659375" y="0.2944375"/>
 <vertex x="-1.675840625" y="0.309475"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-1.5725125" y="0.15031875"/>
 <vertex x="-1.610003125" y="0.15031875"/>
 <vertex x="-1.582825" y="0.13533125"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-1.818690625" y="0.15031875"/>
 <vertex x="-1.95214375" y="0.15031875"/>
 <vertex x="-1.954071875" y="0.12984375"/>
@@ -1402,7 +1403,7 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="-1.820571875" y="0.140359375"/>
 <vertex x="-1.820571875" y="0.142190625"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="0.931571875" y="0.15031875"/>
 <vertex x="0.773684375" y="0.15031875"/>
 <vertex x="0.669796875" y="0.03840625"/>
@@ -1416,19 +1417,19 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="1.092709375" y="-0.30678125"/>
 <vertex x="0.831646875" y="0.046178125"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="0.931571875" y="0.15031875"/>
 <vertex x="1.081278125" y="0.306325"/>
 <vertex x="0.918515625" y="0.306325"/>
 <vertex x="0.773684375" y="0.15031875"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="0.669796875" y="0.15031875"/>
 <vertex x="0.669796875" y="0.306325"/>
 <vertex x="0.534925" y="0.306325"/>
 <vertex x="0.534925" y="0.15031875"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="0.408634375" y="0.15031875"/>
 <vertex x="0.257759375" y="0.15031875"/>
 <vertex x="0.269240625" y="0.13533125"/>
@@ -1455,7 +1456,7 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="0.412853125" y="0.103784375"/>
 <vertex x="0.40909375" y="0.14884375"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="0.408634375" y="0.15031875"/>
 <vertex x="0.3977125" y="0.188771875"/>
 <vertex x="0.3787125" y="0.22341875"/>
@@ -1473,7 +1474,7 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="0.248259375" y="0.1627625"/>
 <vertex x="0.257759375" y="0.15031875"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-0.387959375" y="0.15031875"/>
 <vertex x="-0.649021875" y="0.15031875"/>
 <vertex x="-0.843534375" y="-0.30678125"/>
@@ -1482,13 +1483,13 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="-0.334671875" y="-0.30678125"/>
 <vertex x="-0.193396875" y="-0.30678125"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-0.387959375" y="0.15031875"/>
 <vertex x="-0.456284375" y="0.310896875"/>
 <vertex x="-0.58064375" y="0.310896875"/>
 <vertex x="-0.649021875" y="0.15031875"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-0.8976875" y="0.15031875"/>
 <vertex x="-1.0485625" y="0.15031875"/>
 <vertex x="-1.03459375" y="0.131878125"/>
@@ -1517,7 +1518,7 @@ Standard 8.5x11 US Letter frame</description>
 <vertex x="-0.890625" y="0.094640625"/>
 <vertex x="-0.894690625" y="0.139903125"/>
 </polygon>
-<polygon width="0" layer="21">
+<polygon width="0.01" layer="21">
 <vertex x="-0.8976875" y="0.15031875"/>
 <vertex x="-0.906628125" y="0.18105"/>
 <vertex x="-0.9263375" y="0.217371875"/>
@@ -1543,19 +1544,19 @@ Standard 8.5x11 US Letter frame</description>
 <wire x1="-15.24" y1="15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
 <wire x1="15.24" y1="15.24" x2="15.24" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="15.24" y1="-12.7" x2="-15.24" y2="-12.7" width="0.254" layer="94"/>
-<pin name="VDD" x="-17.78" y="12.7" length="short"/>
-<pin name="SCL/SCLK" x="17.78" y="10.16" length="short" rot="R180"/>
-<pin name="GND" x="-17.78" y="-10.16" length="short"/>
-<pin name="A1" x="17.78" y="-10.16" length="short" rot="R180"/>
 <pin name="A0" x="17.78" y="-7.62" length="short" rot="R180"/>
-<pin name="VDDIO" x="-17.78" y="10.16" length="short"/>
-<pin name="SENB/CS" x="17.78" y="12.7" length="short" rot="R180"/>
-<pin name="MISO" x="17.78" y="5.08" length="short" rot="R180"/>
-<pin name="SDA/MOSI" x="17.78" y="7.62" length="short" rot="R180"/>
-<text x="-15.24" y="15.494" size="1.778" layer="95" font="vector">&gt;Name</text>
-<text x="-15.24" y="-12.954" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
+<pin name="A1" x="17.78" y="-10.16" length="short" rot="R180"/>
+<pin name="GND" x="-17.78" y="-10.16" length="short"/>
 <pin name="INT" x="17.78" y="0" length="short" rot="R180"/>
 <pin name="INT/TRIG" x="17.78" y="-2.54" length="short" rot="R180"/>
+<pin name="MISO" x="17.78" y="5.08" length="short" rot="R180"/>
+<pin name="SCL/SCLK" x="17.78" y="10.16" length="short" rot="R180"/>
+<pin name="SDA/MOSI" x="17.78" y="7.62" length="short" rot="R180"/>
+<pin name="SENB/CS" x="17.78" y="12.7" length="short" rot="R180"/>
+<pin name="VDD" x="-17.78" y="12.7" length="short"/>
+<pin name="VDDIO" x="-17.78" y="10.16" length="short"/>
+<text x="-15.24" y="15.494" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-15.24" y="-15.494" size="1.778" layer="96" font="vector">&gt;Value</text>
 </symbol>
 <symbol name="SPARKX">
 <polygon width="0" layer="94">
@@ -3902,10 +3903,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C4" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="0.1uF"/>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
 <part name="SJ2" library="TestAperatures" deviceset="JUMPER-PAD-3-NC_BY_TRACE" device=""/>
+<<<<<<< HEAD
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
 <part name="U$2" library="SparkX" deviceset="SPARKX-LOGO" device="2"/>
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
 <part name="SUPPLY5" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
+=======
+>>>>>>> FETCH_HEAD
 <part name="SJ3" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_1-NC_TRACE" device="_SILK" value=""/>
 <part name="SJ4" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_1-NC_TRACE" device="_SILK" value=""/>
 <part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
@@ -3913,6 +3917,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND6" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND7" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SJ1" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" value=""/>
+<<<<<<< HEAD
+=======
+<part name="SUPPLY8" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="SUPPLY9" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="SUPPLY11" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="SUPPLY12" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="SUPPLY13" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="SUPPLY14" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND8" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="U$2" library="SparkX" deviceset="SPARKX-LOGO" device="2"/>
+>>>>>>> FETCH_HEAD
 </parts>
 <sheets>
 <sheet>
@@ -3987,7 +4007,12 @@ through SJ1 enables I2C mode. </text>
   Jumpers SJ2 can be opened to 
   remove pull-ups on the SPI lines.
   SJ1 must be open for SPI operation.</text>
+<<<<<<< HEAD
 <text x="209.55" y="134.112" size="1.778" layer="97">I2C Addressing Table</text>
+=======
+<text x="205.994" y="133.35" size="1.778" layer="97">I2C Addressing Table</text>
+<text x="199.898" y="81.788" size="1.778" layer="97">Default 7-bit I2C Adr: 0x0C</text>
+>>>>>>> FETCH_HEAD
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="134.62" y="114.3"/>
@@ -4007,10 +4032,13 @@ through SJ1 enables I2C mode. </text>
 <instance part="C4" gate="G$1" x="99.06" y="114.3"/>
 <instance part="SUPPLY3" gate="VDD" x="160.02" y="147.32"/>
 <instance part="SJ2" gate="G$1" x="175.26" y="139.7" rot="R270"/>
+<<<<<<< HEAD
 <instance part="SUPPLY4" gate="VDD" x="175.26" y="147.32"/>
 <instance part="U$2" gate="G$1" x="177.8" y="48.26"/>
 <instance part="SUPPLY2" gate="VDD" x="55.88" y="40.64"/>
 <instance part="SUPPLY5" gate="VDD" x="101.6" y="40.64"/>
+=======
+>>>>>>> FETCH_HEAD
 <instance part="SJ3" gate="G$1" x="210.82" y="99.06"/>
 <instance part="SJ4" gate="G$1" x="233.68" y="99.06"/>
 <instance part="SUPPLY6" gate="VDD" x="210.82" y="106.68"/>
@@ -4018,6 +4046,22 @@ through SJ1 enables I2C mode. </text>
 <instance part="GND6" gate="1" x="210.82" y="88.9"/>
 <instance part="GND7" gate="1" x="233.68" y="88.9"/>
 <instance part="SJ1" gate="G$1" x="160.02" y="139.7" rot="R90"/>
+<<<<<<< HEAD
+=======
+<instance part="SUPPLY8" gate="G$1" x="55.88" y="40.64"/>
+<instance part="SUPPLY9" gate="G$1" x="101.6" y="40.64"/>
+<instance part="SUPPLY11" gate="G$1" x="160.02" y="147.32"/>
+<instance part="SUPPLY12" gate="G$1" x="175.26" y="147.32"/>
+<instance part="SUPPLY13" gate="G$1" x="210.82" y="106.68"/>
+<instance part="SUPPLY14" gate="G$1" x="233.68" y="106.68"/>
+<instance part="SUPPLY1" gate="G$1" x="114.3" y="129.54"/>
+<instance part="SUPPLY2" gate="G$1" x="104.14" y="121.92"/>
+<instance part="SUPPLY3" gate="G$1" x="93.98" y="121.92"/>
+<instance part="GND2" gate="1" x="93.98" y="106.68"/>
+<instance part="GND3" gate="1" x="114.3" y="99.06"/>
+<instance part="GND8" gate="1" x="104.14" y="106.68"/>
+<instance part="U$2" gate="G$1" x="182.88" y="48.26"/>
+>>>>>>> FETCH_HEAD
 </instances>
 <busses>
 </busses>
