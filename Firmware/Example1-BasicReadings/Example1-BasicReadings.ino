@@ -17,7 +17,6 @@
 */
 
 #include <Wire.h>
-#include <Arduino.h>
 #include <MLX90393.h> //From https://github.com/tedyapo/arduino-MLX90393 by Theodore Yapo
 
 MLX90393 mlx;
