@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -269,22 +269,22 @@ Standard 8.5x11 US Letter frame</description>
 <wire x1="0.2254" y1="-0.0968" x2="0.2254" y2="0.1572" width="0.0508" layer="51"/>
 <wire x1="0.2254" y1="0.1572" x2="0.0984" y2="0.0302" width="0.0508" layer="51"/>
 <wire x1="0.2254" y1="0.1572" x2="0.3524" y2="0.0302" width="0.0508" layer="51"/>
-<smd name="1" x="0.754" y="1.498" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R90" stop="no"/>
-<smd name="2" x="0.254" y="1.498" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R90" stop="no"/>
-<smd name="3" x="-0.246" y="1.498" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R90" stop="no"/>
-<smd name="4" x="-0.746" y="1.498" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R90" stop="no"/>
-<smd name="5" x="-1.508" y="0.746" dx="0.85" dy="0.3" layer="1" roundness="75" stop="no"/>
-<smd name="6" x="-1.508" y="0.246" dx="0.85" dy="0.3" layer="1" roundness="75" stop="no"/>
-<smd name="7" x="-1.508" y="-0.254" dx="0.85" dy="0.3" layer="1" roundness="75" stop="no"/>
-<smd name="8" x="-1.508" y="-0.754" dx="0.85" dy="0.3" layer="1" roundness="75" stop="no"/>
-<smd name="9" x="-0.746" y="-1.506" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R270" stop="no"/>
-<smd name="10" x="-0.246" y="-1.506" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R270" stop="no"/>
-<smd name="11" x="0.254" y="-1.506" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R270" stop="no"/>
-<smd name="12" x="0.754" y="-1.506" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R270" stop="no"/>
-<smd name="13" x="1.496" y="-0.764" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R180" stop="no"/>
-<smd name="14" x="1.496" y="-0.264" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R180" stop="no"/>
-<smd name="15" x="1.496" y="0.236" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R180" stop="no"/>
-<smd name="16" x="1.496" y="0.736" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R180" stop="no"/>
+<smd name="1" x="0.754" y="1.498" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R90"/>
+<smd name="2" x="0.254" y="1.498" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R90"/>
+<smd name="3" x="-0.246" y="1.498" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R90"/>
+<smd name="4" x="-0.746" y="1.498" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R90"/>
+<smd name="5" x="-1.508" y="0.746" dx="0.85" dy="0.3" layer="1" roundness="75"/>
+<smd name="6" x="-1.508" y="0.246" dx="0.85" dy="0.3" layer="1" roundness="75"/>
+<smd name="7" x="-1.508" y="-0.254" dx="0.85" dy="0.3" layer="1" roundness="75"/>
+<smd name="8" x="-1.508" y="-0.754" dx="0.85" dy="0.3" layer="1" roundness="75"/>
+<smd name="9" x="-0.746" y="-1.506" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R270"/>
+<smd name="10" x="-0.246" y="-1.506" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R270"/>
+<smd name="11" x="0.254" y="-1.506" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R270"/>
+<smd name="12" x="0.754" y="-1.506" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R270"/>
+<smd name="13" x="1.496" y="-0.764" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R180"/>
+<smd name="14" x="1.496" y="-0.264" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R180"/>
+<smd name="15" x="1.496" y="0.236" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R180"/>
+<smd name="16" x="1.496" y="0.736" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R180"/>
 <text x="0.0714" y="2.1136" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="0.0214" y="-2.0464" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 <text x="-0.3" y="-0.1174" size="0.3048" layer="51" ratio="15">X</text>
